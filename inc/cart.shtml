@@ -1,0 +1,38 @@
+<!-- Shopping Cart popup starts here -->
+
+        <div class="mini-cart-content"><h3 class="legend">
+		Recently added to your cart</h3>
+	<input type="hidden" class="totalQty" value="1">
+<ul class="itemList">
+	<li class="popupCartItem">
+			<div class="itemDesc">
+				<div class="itemDetail">
+                    <a href="#" tabindex="0" title="Nexxtech Soundbar Computer Speaker">
+                        <div class="itemThumb">
+                            <img class="primary-image" data-itemprop="image" src="https://www.thesource.ca/medias/8000636a-mediaConversion-original-1-mediaConversion-640-x-480-mediaConversion-400-x-300-mediaConversion-200-x-150-0?context=bWFzdGVyfGltYWdlc3wyMDc4MHxpbWFnZS9qcGVnfGltYWdlcy9oZTIvaDgyLzg4Mjc1NzIyNTY3OTguanBnfGQyNDY1Zjc2Nzg3N2MyMzFmMjJlZWRlY2RjYWRlZWM5NjdiMmMzZmFhNTcyZTc2ZDczZDNiNzNhYjNmZTc5ZTU" alt="">
+                            </div>
+                        <span class="itemName text-overflow-ellipsis truncate">Nexxtech Soundbar Computer Speaker</span>
+                    </a>
+				</div>
+				<div class="itemAdditionals">
+					<div class="itemQuantity"><span class="label">Qty:</span>1</div>
+                    <div class="itemPrice">$19<span>.99</span></div>
+				</div>
+				</div>
+		</li>
+	</ul>
+<div class="total">
+	Total&nbsp;
+    <span class="right">
+        $19<span>.99</span></span>
+</div>
+
+<div class="banner">
+	</div>
+
+<div class="links">
+	<a href="./" id="miniCartContinueShopping" class="button  continue-shopping-link">&lt; Continue Shopping</a>
+	<div id="view-cart"><a href="/en-ca/cart" id="viewCart" class="button primary-button">View cart</a></div>
+</div></div>
+
+<!-- Cart Ends here-->

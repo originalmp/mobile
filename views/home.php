@@ -1,0 +1,2 @@
+  <h2>Mobile Site</h2>
+  <p>Click on the menu to open the side navigation menu, and push this content to the right. Notice that i add a black see-through background-color to body when the sidenav is opened.</p>

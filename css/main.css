@@ -1,0 +1,261 @@
+body {
+	font-family: "Lato", sans-serif;
+	transition: background-color .5s;
+	margin: 0;
+}
+#main {
+	transition: margin-left .9s;
+	width: 100vw;
+}
+#main.active {
+	float: left;
+	overflow: hidden;
+	position: fixed;
+}
+
+
+/**************** Main Header ****************/
+/* file: inc/ */
+#header-bar {
+	z-index: 1;
+	background: #005495;
+	color: white;
+	height: 55px;
+	line-height: 55px;
+	position: relative;
+}
+#tab-bar-center {
+	text-align: center;
+}
+#tab-bar-center .cc-logo {
+	width: auto;
+	height: 30px;
+	margin-left: 11px;
+}
+#tab-bar-left {
+	text-align: left;
+	float: left;
+}
+#tab-bar-right {
+	padding: 0 !important;
+}
+#tab-bar-right #right-menu-icons {
+	float: right;
+	display: inline-flex;
+}
+/* Top Menu Icons*/
+div#line {
+	display: inline;
+	border-left: 1px solid rgba(217, 217, 217, 0.61);
+	height: 20px;
+	margin-top: 18px;
+	margin-right: 10px;
+}
+.menu_icon {
+	width: auto;
+	height: 20px;
+}
+#online-cart {
+	width: 52px;
+	text-align: center;
+}
+#locate-product {
+	width: 52px;
+	text-align: center;
+}
+#menu-bar-right {
+    text-align: right;
+    line-height: 60px;
+}
+/*Shoping Cart Popup*/
+#shopping-cart {
+	display: inline;
+}
+.cartPopup::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #ffffff;
+	top: -8px;
+	position: absolute;
+	right: 3px;
+}
+.cartPopup {
+	display: none;
+	width: 280px;
+	height: 300px;
+	right: 0px;
+	position: absolute;
+	padding: 16px 10px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	-webkit-box-shadow: 0 0 4px 1px rgba(0,0,0,.18);
+	box-shadow: 0 0 4px 1px rgba(0,0,0,.18);
+	z-index: 2;
+}
+.cartPopup.active {
+	display: block !important;
+}
+.cart-icon.active {
+	background: #013366;
+}
+/*************** *Product Search* **************/
+#ProductSearch {
+	transform: translateY(-160%);
+	transition: all 0.3s ease-in;
+	height: 75px;
+	position: absolute;
+/*	padding: 16px 10px; */
+	background: #013366;
+	border-bottom: 1px solid #d9d9d9;
+	-webkit-box-shadow: 0 0 4px 1px rgba(0,0,0,.18);
+	box-shadow: 0 0 4px 1px rgba(0,0,0,.18);
+}
+/* Search outer DIV - Active, index.php */
+#ProductSearch.active {
+	transform: translateY(0);
+}
+/* Search outer DIV - Active, index.php */
+.search-icon.active {
+	background: #013366;
+}
+/* Product Search - input, inc/search.php */
+#ProductSearch input#FindProduct {
+    width: 100%;
+    height: 44px;
+    border: none;
+}
+
+/**************** SIDE MENU Section ****************/
+
+/*Side Menu*/
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #005495;
+	overflow-x: hidden;
+	transition: 0.9s;
+	padding-top: 60px;
+}
+/* Side Nav Menu Items*/
+.sidenav #innerMenu a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #f1f1f1;
+	display: block;
+	transition: 0.9s;
+}
+.sidenav #innerMenu a:hover, .sidenav #innerMenu a:focus {
+	color: #f1f1f1;
+	color: #fddb01;
+}
+/* Side Nav Header Area*/
+.sidenav #menuHeader {
+	top: 0px;
+	position: absolute;
+	width: 80vw;
+	height: 57px;
+	left: 15px;
+}
+/* Side Nav inner Body */
+.sidenav #innerMenu {
+	width: 80vw;
+}
+/* Close Side Nav*/
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+/* Site Logo */
+.sidenav .cc-logo {
+	width: auto;
+	height: 30px;
+	margin-left: 11px;
+}
+
+.sidenav #menu-bar-center {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60px;
+}
+.sidenav #menu-bar-left {
+	padding: 0;
+}
+
+.sidenav #account_icon {
+	width: auto;
+	height: 40px;
+}
+.sidenav .account-icon {
+	height: 60px;
+	width: 70px;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+    padding-top: 8px;
+}
+/*Account Section Open Side Nav 100%*/
+.sidenav #menuHeader.row.open {
+    width: 100vw !important;
+	    transition: 0.9s;
+}
+.sidenav.active.open {
+	width: 100% !important;
+	    transition: 0.9s;
+}
+.sidenav #close-Sidemenu.open {
+    display: block !important;
+}
+nav#header-bar #closemenu.open,
+.sidenav #account_icon.open,
+.sidenav #innerMenu.open,
+.sidenav #topmenu-GPS-icon.open,
+.sidenav #account_exit-icon,
+.sidenav #account-access {
+    display: none !important;
+}
+
+.sidenav #account_exit-icon.open,
+.sidenav #account-access.open {
+	display: block !important;
+}
+
+.sidenav #account-access.open {
+	width: 100vw;
+	height: 100%;
+}
+/*Account ICON Div, inc/sideNav/menuHeader.php */
+.sidenav .account-icon.open {
+    text-align: -webkit-center;
+    line-height: 60px;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+/*Account Exit - ICON, inc/sideNav/menuHeader.php */
+.sidenav #account_exit-icon.open{
+	width: 24px;
+    height: 24px;
+}	
+/* Account Area - Activated */	
+.sidenav #account-access.open,
+.sidenav .account-icon.open {
+	background: aliceblue;
+
+}
+/* Account Area - Signin / Login, inc/accountAccess.php */
+#account-access .site-login {
+    height: 260px;
+}
+
+
