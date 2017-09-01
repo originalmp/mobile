@@ -1,5 +1,7 @@
 // JavaScript Document
 //
+
+
 // Side Menu Open
 function openNav() {
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
@@ -50,11 +52,11 @@ $(document).click(function(e) {
 
 // My Account menu Active
 $('#my-account').click(function() {
-  $('.account-icon, #account-access, #my-account, #mySidenav, #menuHeader, #innerMenu, #closemenu, #topmenu-GPS-icon, #close-Sidemenu, #account_icon, #account_exit-icon').toggleClass('open')
+  $('.account-icon, #account-access, #my-account, #mySidenav, #sideNavTop, #innerMenu, #closemenu, #topmenu-GPS-icon, #close-Sidemenu, #account_icon, #account_exit-icon').toggleClass('open')
 })
 
 $(document).click(function(e) {
-  var accountClick = $(".account-icon, #account-access, #my-account, #mySidenav, #menuHeader, #innerMenu, #closemenu, #topmenu-GPS-icon, #close-Sidemenu, #account_icon, #account_exit-icon");
+  var accountClick = $(".account-icon, #account-access, #my-account, #mySidenav, #sideNavTop, #innerMenu, #closemenu, #topmenu-GPS-icon, #close-Sidemenu, #account_icon, #account_exit-icon");
   if (!accountClick.is(e.target) && accountClick.has(e.target).length === 0) {
     accountClick.removeClass('open')
   }
@@ -76,8 +78,5 @@ function signupTab() {
 	document.getElementById("membership-signup").style.display = "block";
 }
 
-//function loginTab(i) { 
-//document.getElementById(i).style.visibility='visible'; 
-//}
 
 // FILE END

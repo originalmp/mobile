@@ -1,0 +1,1 @@
+  <img class="banner" src="./images/ccrewards-en.png" title="Membership Has It’s Rewards" alt="CC Rewards Banner">

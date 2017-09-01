@@ -11,8 +11,8 @@
 <body >
 <!-- START of Side Menu -->
 <div id="mySidenav" class="sidenav">
-  <div class="container-fluid">
-    <?php include './inc/sideNav/menuHeader.php'; ?>
+  <div id="side-menu-top" class="container-fluid">
+    <?php include './inc/sideNav/side-menu-top.php'; ?>
   </div>
   <div id="account-access" class="">
     <?php include './inc/accountAccess.php'; ?>
@@ -41,7 +41,7 @@
   <!-- END of POP Open Items --> 
   
   <!-- Body Content -->
-  <div id"body-content">
+  <div id="body-content">
     <?php include './views/home.php'; ?>
   </div>
 </div>

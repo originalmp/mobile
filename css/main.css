@@ -1,3 +1,11 @@
+/*General Page Styling*/
+.link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/*Page Style*/
 body {
 	font-family: "Lato", sans-serif;
 	transition: background-color .5s;
@@ -143,6 +151,40 @@ div#line {
 	transition: 0.9s;
 	padding-top: 60px;
 }
+
+/* Side Nav Header Area, index.php */
+.sidenav #side-menu-top {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 60px;
+    width: 100vw;
+    background: #005495;
+}
+/* Side Nav Header Area, /inc/sideNav/sideNavTop.php */
+.sidenav #sideNavTop {
+	top: 0px;
+	position: absolute;
+	width: 80vw;
+	height: 60px;
+	left: 15px;
+}
+/*Account Section - Nav top - Open Side Nav to 100%, /inc/sideNav/sideNavTop.php */
+.sidenav #sideNavTop.row.open {
+    width: 100vw !important;
+	    transition: 0.9s;
+	    background: #005495;
+}
+
+/* Side Nav inner Body */
+.sidenav #innerMenu {
+	width: 80vw;
+}
+/* Account Selection - Open Side Nav to 100%*/
+.sidenav.active.open {
+	width: 100% !important;
+	    transition: 0.9s;
+}
 /* Side Nav Menu Items*/
 .sidenav #innerMenu a {
 	padding: 8px 8px 8px 32px;
@@ -151,23 +193,13 @@ div#line {
 	color: #f1f1f1;
 	display: block;
 	transition: 0.9s;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.45);
 }
 .sidenav #innerMenu a:hover, .sidenav #innerMenu a:focus {
 	color: #f1f1f1;
 	color: #fddb01;
 }
-/* Side Nav Header Area*/
-.sidenav #menuHeader {
-	top: 0px;
-	position: absolute;
-	width: 80vw;
-	height: 57px;
-	left: 15px;
-}
-/* Side Nav inner Body */
-.sidenav #innerMenu {
-	width: 80vw;
-}
+
 /* Close Side Nav*/
 .sidenav .closebtn {
 	position: absolute;
@@ -192,11 +224,11 @@ div#line {
 .sidenav #menu-bar-left {
 	padding: 0;
 }
-
 .sidenav #account_icon {
 	width: auto;
 	height: 40px;
 }
+/*Account ICON Div, inc/sideNav/sideNavTop.php */
 .sidenav .account-icon {
 	height: 60px;
 	width: 70px;
@@ -205,18 +237,21 @@ div#line {
 	padding-right: 10px;
     padding-top: 8px;
 }
-/*Account Section Open Side Nav 100%*/
-.sidenav #menuHeader.row.open {
-    width: 100vw !important;
-	    transition: 0.9s;
+/*Account ICON Div, inc/sideNav/sideNavTop.php */
+.sidenav .account-icon.open {
+    text-align: -webkit-center;
+    line-height: 60px;
+    vertical-align: middle;
+    padding-top: 20px;
 }
-.sidenav.active.open {
-	width: 100% !important;
-	    transition: 0.9s;
+
+/*Account Section - Open Account Body to 100%*/
+.sidenav #account-access.open {
+	width: 100vw;
+	height: 100vh;
 }
-.sidenav #close-Sidemenu.open {
-    display: block !important;
-}
+
+/*Account Section - Disable Elements - When Side Nav Opens to 100% */
 nav#header-bar #closemenu.open,
 .sidenav #account_icon.open,
 .sidenav #innerMenu.open,
@@ -226,36 +261,30 @@ nav#header-bar #closemenu.open,
     display: none !important;
 }
 
+/*Account Section - Enable Elements - When Side Nav Opens to 100% */
+.sidenav #close-Sidemenu.open,
 .sidenav #account_exit-icon.open,
 .sidenav #account-access.open {
 	display: block !important;
 }
 
-.sidenav #account-access.open {
-	width: 100vw;
-	height: 100%;
-}
-/*Account ICON Div, inc/sideNav/menuHeader.php */
-.sidenav .account-icon.open {
-    text-align: -webkit-center;
-    line-height: 60px;
-    vertical-align: middle;
-    padding-top: 20px;
-}
-/*Account Exit - ICON, inc/sideNav/menuHeader.php */
+
+/*Account Exit - ICON, inc/sideNav/sideNavTop.php */
 .sidenav #account_exit-icon.open{
 	width: 24px;
     height: 24px;
 }	
-/* Account Area - Activated */	
+/* Account Area - Activated - Change background Color */	
 .sidenav #account-access.open,
 .sidenav .account-icon.open {
 	background: aliceblue;
 
 }
-/* Account Area - Signin / Login, inc/accountAccess.php */
-#account-access .site-login {
-    height: 260px;
+/* Account Area - Signin / Login Area Hight, inc/accountAccess.php */
+#account-access #membership-signin {
+    height: 320px;
 }
+/* Account Area - Signup / Signup form Hight, inc/accountAccess.php */
+#account-access #membership-signup {
 
-
+}
