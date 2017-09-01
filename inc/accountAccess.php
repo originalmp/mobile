@@ -82,10 +82,12 @@
     line-height: 16px;
     text-decoration: none !important;
 }
-
-div#terms-conditions {
-
+/* , inc/signup.php */
+/*, inc/signin.php */
+.account-form-group {
+    margin-bottom: 10px;
 }
+
 </style>
 <div class="container-fluid">
 

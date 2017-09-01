@@ -4,25 +4,31 @@
 
 // Side Menu Open
 function openNav() {
+    document.body.style.overflowX = "hidden";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.body.style.overflowX = "hidden";	
-    document.getElementById("mySidenav").style.width = "80%";
-    document.getElementById("mySidenav").classList.add("active");	
     document.getElementById("main").style.marginLeft = "80%";
     document.getElementById("main").classList.add("active");
 	document.getElementById("openmenu").style.display = "none";
 	document.getElementById("closemenu").innerHTML = "&times;";
+	
+    document.getElementById("mySidenav").style.width = "80%";
+    document.getElementById("mySidenav").classList.add("active");
+    document.getElementById("sideNavTop").style.display = "block";	
+    document.getElementById("innerMenu").style.display = "block";
+
 }
 // Side Menu Close
 function closeNav() {
-    document.getElementById("mySidenav").classList.remove("active");
-    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.overflowX = "auto";	
+    document.body.style.backgroundColor = "white";
     document.getElementById("main").style.marginLeft= "0";
 	document.getElementById("main").classList.remove("active");
-    document.body.style.backgroundColor = "white";
-    document.body.style.overflowX = "auto";
 	document.getElementById("openmenu").style.display = "block";
 	document.getElementById("closemenu").innerHTML = "";
+    document.getElementById("mySidenav").classList.remove("active");
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("sideNavTop").style.display = "none";	
+    document.getElementById("innerMenu").style.display = "none";
 }
 
 // Shopping Cart Popout
@@ -51,12 +57,12 @@ $(document).click(function(e) {
 });
 
 // My Account menu Active
-$('#my-account').click(function() {
-  $('.account-icon, #account-access, #my-account, #mySidenav, #sideNavTop, #innerMenu, #closemenu, #topmenu-GPS-icon, #close-Sidemenu, #account_icon, #account_exit-icon').toggleClass('open')
+$('#my-account, #close-Sidemenu').click(function() {
+  $('.account-icon, #account-access, #my-account, #mySidenav, #sideNavTop, #innerMenu, #closemenu, #topmenu-GPS-icon, #close-Sidemenu, #account_icon, #account_exit-icon, #side-menu-top').toggleClass('open')
 })
 
 $(document).click(function(e) {
-  var accountClick = $(".account-icon, #account-access, #my-account, #mySidenav, #sideNavTop, #innerMenu, #closemenu, #topmenu-GPS-icon, #close-Sidemenu, #account_icon, #account_exit-icon");
+  var accountClick = $("#my-account, #close-Sidemenu, .account-icon, #account-access, #mySidenav, #sideNavTop, #innerMenu, #closemenu, #topmenu-GPS-icon, #close-Sidemenu, #account_icon, #account_exit-icon, #side-menu-top");
   if (!accountClick.is(e.target) && accountClick.has(e.target).length === 0) {
     accountClick.removeClass('open')
   }

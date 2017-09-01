@@ -1,3 +1,5 @@
+<!-- start signin.php-->
+
 <style>
 #membership-signin #sigin_button {
     background-color: #07c;
@@ -44,31 +46,7 @@
 }
 
 
-.account-form-group {
-    margin-bottom: 20px;
-}
 
-#membership-signup #next_button {
-    background-color: #07c;
-    background-image: none;
-    border: 0;
-    border-radius: 8px;
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0 auto 10px;
-    outline: 0;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 1px 0 rgba(0,0,0,0.7);
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-appearance: none;
-    white-space: normal;
-    width: 80%;
-}
 </style>
 
 <div class="account-form-group">
@@ -94,3 +72,4 @@ form-group__show-password
 </div>
 <button id="sigin_button" type="submit" class="bluebutton">Sign in</button>
 <p id="no-account" class="">No account? <a class="link" rel="nofollow" title="No account?, Create one here"  onclick="signupTab()" href="#">Create one here</a></p>
+<!-- end signin.php-->

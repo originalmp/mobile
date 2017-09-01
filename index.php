@@ -17,7 +17,7 @@
   <div id="account-access" class="">
     <?php include './inc/accountAccess.php'; ?>
   </div>
-  <div id="innerMenu">
+  <div id="innerMenu" style="none;">
     <?php include './inc/sideNav/innerMenu.php'; ?>
   </div>
 </div>

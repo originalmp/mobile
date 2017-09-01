@@ -1,5 +1,5 @@
 <!-- Start of sideNavTop.php  -->
-<div class="row" id="sideNavTop" style="color: white;">
+<div class="row" id="sideNavTop" style="color: white; display:none;">
 <!-- COL 1 LEFT -->
 <div id="menu-bar-left" class="col-xs-2 col-sm-2">
   <div class="account-icon">

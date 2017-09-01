@@ -1,10 +1,8 @@
 /*General Page Styling*/
 .link {
-    font-weight: bold;
-    text-decoration: underline;
+	font-weight: bold;
+	text-decoration: underline;
 }
-
-
 /*Page Style*/
 body {
 	font-family: "Lato", sans-serif;
@@ -12,7 +10,7 @@ body {
 	margin: 0;
 }
 #main {
-	transition: margin-left .9s;
+	transition: margin-left 1s;
 	width: 100vw;
 }
 #main.active {
@@ -20,15 +18,13 @@ body {
 	overflow: hidden;
 	position: fixed;
 }
-
-
 /**************** Main Header ****************/
 /* file: inc/ */
 #header-bar {
 	z-index: 1;
 	background: #005495;
 	color: white;
-	height: 55px;
+	height: 60px;
 	line-height: 55px;
 	position: relative;
 }
@@ -72,8 +68,8 @@ div#line {
 	text-align: center;
 }
 #menu-bar-right {
-    text-align: right;
-    line-height: 60px;
+	text-align: right;
+	line-height: 60px;
 }
 /*Shoping Cart Popup*/
 #shopping-cart {
@@ -115,7 +111,7 @@ div#line {
 	transition: all 0.3s ease-in;
 	height: 75px;
 	position: absolute;
-/*	padding: 16px 10px; */
+	/*	padding: 16px 10px; */
 	background: #013366;
 	border-bottom: 1px solid #d9d9d9;
 	-webkit-box-shadow: 0 0 4px 1px rgba(0,0,0,.18);
@@ -131,59 +127,69 @@ div#line {
 }
 /* Product Search - input, inc/search.php */
 #ProductSearch input#FindProduct {
-    width: 100%;
-    height: 44px;
-    border: none;
+	width: 100%;
+	height: 44px;
+	border: none;
 }
-
 /**************** SIDE MENU Section ****************/
 
 /*Side Menu*/
 .sidenav {
 	height: 100%;
-	width: 0;
 	position: fixed;
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #005495;
+	background-color: #FFF;
 	overflow-x: hidden;
 	transition: 0.9s;
 	padding-top: 60px;
-}
+	width: 0;
+	visibility: hidden;
 
+}
+.sidenav.active {
+	visibility: visible !important;
+	    background-color: #005495;
+
+}
+/* Account Selection - Open Side Nav to 100%*/
+.sidenav.active.open {
+	width: 100% !important;
+	transition: 0.9s;
+	background: aliceblue !important;
+}
 /* Side Nav Header Area, index.php */
 .sidenav #side-menu-top {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    height: 60px;
-    width: 100vw;
-    background: #005495;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	height: 60px;
+	width: 80vw;
+	background: #005495;
+}
+.sidenav #side-menu-top.open {
+	width: 100vw !important;
+	transition: 0.9s;
 }
 /* Side Nav Header Area, /inc/sideNav/sideNavTop.php */
 .sidenav #sideNavTop {
 	top: 0px;
 	position: absolute;
-	width: 80vw;
 	height: 60px;
 	left: 15px;
+	width: 80vw;
 }
 /*Account Section - Nav top - Open Side Nav to 100%, /inc/sideNav/sideNavTop.php */
 .sidenav #sideNavTop.row.open {
-    width: 100vw !important;
-	    transition: 0.9s;
-	    background: #005495;
+	width: 100vw !important;
+	transition: 0.9s;
+	background: #005495;
 }
-
 /* Side Nav inner Body */
 .sidenav #innerMenu {
 	width: 80vw;
-}
-/* Account Selection - Open Side Nav to 100%*/
-.sidenav.active.open {
-	width: 100% !important;
-	    transition: 0.9s;
+	 transition:visibility 1s, opacity 1s;
 }
 /* Side Nav Menu Items*/
 .sidenav #innerMenu a {
@@ -193,13 +199,12 @@ div#line {
 	color: #f1f1f1;
 	display: block;
 	transition: 0.9s;
-    border-bottom: 1px solid rgba(153, 153, 153, 0.45);
+	border-bottom: 1px solid rgba(153, 153, 153, 0.45);
 }
 .sidenav #innerMenu a:hover, .sidenav #innerMenu a:focus {
 	color: #f1f1f1;
 	color: #fddb01;
 }
-
 /* Close Side Nav*/
 .sidenav .closebtn {
 	position: absolute;
@@ -208,14 +213,12 @@ div#line {
 	font-size: 36px;
 	margin-left: 50px;
 }
-
 /* Site Logo */
 .sidenav .cc-logo {
 	width: auto;
 	height: 30px;
 	margin-left: 11px;
 }
-
 .sidenav #menu-bar-center {
 	text-align: center;
 	vertical-align: middle;
@@ -235,56 +238,50 @@ div#line {
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-    padding-top: 8px;
-}
-/*Account ICON Div, inc/sideNav/sideNavTop.php */
-.sidenav .account-icon.open {
-    text-align: -webkit-center;
-    line-height: 60px;
-    vertical-align: middle;
-    padding-top: 20px;
-}
+    padding-top: 15px;
 
-/*Account Section - Open Account Body to 100%*/
+}
+/* Account Area - Activated - ICON Div, inc/sideNav/sideNavTop.php */
+.sidenav .account-icon.open {
+	text-align: -webkit-center;
+	line-height: 60px;
+	height: 61px;
+	vertical-align: middle;
+	padding-top: 20px;
+	background: aliceblue;
+	  -webkit-transition: background-color 0.9s ease-out;
+  -moz-transition: background-color 0.9s ease-out;
+  -o-transition: background-color 0.9s ease-out;
+  transition: background-color 0.9s ease-out;
+}
+/* Account Area - Activated - Open Account Body to 100%*/
 .sidenav #account-access.open {
 	width: 100vw;
 	height: 100vh;
+	background: aliceblue;
+	transition: 0.9s;
+		  -webkit-transition: background-color 0.9s ease-out;
+  -moz-transition: background-color 0.9s ease-out;
+  -o-transition: background-color 0.9s ease-out;
+  transition: background-color 0.9s ease-out;
 }
-
 /*Account Section - Disable Elements - When Side Nav Opens to 100% */
-nav#header-bar #closemenu.open,
-.sidenav #account_icon.open,
-.sidenav #innerMenu.open,
-.sidenav #topmenu-GPS-icon.open,
-.sidenav #account_exit-icon,
-.sidenav #account-access {
-    display: none !important;
+nav#header-bar #closemenu.open, .sidenav #account_icon.open, .sidenav #innerMenu.open, .sidenav #topmenu-GPS-icon.open, .sidenav #account_exit-icon, .sidenav #account-access {
+	display: none !important;
 }
-
 /*Account Section - Enable Elements - When Side Nav Opens to 100% */
-.sidenav #close-Sidemenu.open,
-.sidenav #account_exit-icon.open,
-.sidenav #account-access.open {
+.sidenav #close-Sidemenu.open, .sidenav #account_exit-icon.open, .sidenav #account-access.open {
 	display: block !important;
 }
-
-
 /*Account Exit - ICON, inc/sideNav/sideNavTop.php */
-.sidenav #account_exit-icon.open{
+.sidenav #account_exit-icon.open {
 	width: 24px;
-    height: 24px;
-}	
-/* Account Area - Activated - Change background Color */	
-.sidenav #account-access.open,
-.sidenav .account-icon.open {
-	background: aliceblue;
-
+	height: 24px;
 }
 /* Account Area - Signin / Login Area Hight, inc/accountAccess.php */
 #account-access #membership-signin {
-    height: 320px;
+	height: 320px;
 }
 /* Account Area - Signup / Signup form Hight, inc/accountAccess.php */
 #account-access #membership-signup {
-
 }

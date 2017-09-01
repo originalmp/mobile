@@ -1,3 +1,5 @@
+<!-- start signup.php-->
+
 <style>
 #membership-signup .form-label {
     width: 96%;
@@ -10,6 +12,28 @@
     display: block;
     padding: 8px 2%;
     width: 96%;
+}
+
+#membership-signup #next_button {
+    background-color: #07c;
+    background-image: none;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto 10px;
+    outline: 0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.7);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-appearance: none;
+    white-space: normal;
+    width: 80%;
 }
 </style>
 
@@ -91,3 +115,4 @@ $(document).ready(function(){
         }).change();
     });
 </script>
+<!-- end signup.php-->
