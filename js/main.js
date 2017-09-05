@@ -5,22 +5,20 @@
 // Side Menu Open
 function openNav() {
     document.body.style.overflowX = "hidden";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     document.getElementById("main").style.marginLeft = "80%";
     document.getElementById("main").classList.add("active");
 	document.getElementById("openmenu").style.display = "none";
 	document.getElementById("closemenu").innerHTML = "&times;";
-	
     document.getElementById("mySidenav").style.width = "80%";
     document.getElementById("mySidenav").classList.add("active");
     document.getElementById("sideNavTop").style.display = "block";	
     document.getElementById("innerMenu").style.display = "block";
+    document.getElementById("body-content").classList.add("disable");
 
 }
 // Side Menu Close
 function closeNav() {
     document.body.style.overflowX = "auto";	
-    document.body.style.backgroundColor = "white";
     document.getElementById("main").style.marginLeft= "0";
 	document.getElementById("main").classList.remove("active");
 	document.getElementById("openmenu").style.display = "block";
@@ -29,6 +27,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("sideNavTop").style.display = "none";	
     document.getElementById("innerMenu").style.display = "none";
+    document.getElementById("body-content").classList.remove("disable");
 }
 
 // Shopping Cart Popout

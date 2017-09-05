@@ -285,3 +285,30 @@ nav#header-bar #closemenu.open, .sidenav #account_icon.open, .sidenav #innerMenu
 /* Account Area - Signup / Signup form Hight, inc/accountAccess.php */
 #account-access #membership-signup {
 }
+/**************** HOME PAGE Section ****************/
+
+/* Disable Home page when side menu is active, views/home.php */
+#body-content.disable {
+    opacity: 0.2;
+}
+
+/*REMOVE BULLETS FROM UL, views/home.php */
+
+#home ul.col4 {
+    list-style-type: none;
+}
+/* Product Image, views/home.php */
+#home span.product-img {
+    display: block;
+}
+/* Product Price, views/home.php */
+
+#home span.price-regular {
+    display: block;
+    font-size: 1.7em !important;
+    line-height: 1em;
+    color: #000000;
+    font-weight: bold !important;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    text-decoration: none !important;
+}
