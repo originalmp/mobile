@@ -6,6 +6,7 @@
    <a id="my-account" href="#">
     <img id="account_icon" class="menu_icon" src="./images/my-account-icon.png" title="My Account" alt="Open">
     <img id="account_exit-icon" class="menu_icon" src="./images/close.png" title="Exit Area" alt="Exit">
+    <img id="browse_all_product_exit-icon" class="menu_icon" src="./images/close.png" title="Exit Area" alt="Exit">
   </a>
  </div>
 </div>

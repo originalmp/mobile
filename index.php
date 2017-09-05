@@ -11,15 +11,23 @@
 <body >
 <!-- START of Side Menu -->
 <div id="mySidenav" class="sidenav">
+<!-- Side menu top -->
+
   <div id="side-menu-top" class="container-fluid">
     <?php include './inc/sideNav/side-menu-top.php'; ?>
   </div>
+
+<!--My Account Login -->
   <div id="account-access" class="">
-    <?php include './inc/accountAccess.php'; ?>
+    <?php include './inc/sideNav/accountAccess.php'; ?>
   </div>
+
+
   <div id="innerMenu" style="none;">
     <?php include './inc/sideNav/innerMenu.php'; ?>
   </div>
+
+
 </div>
 <!-- END of Side Menu id="mySidenav" class="sidenav" --> 
 

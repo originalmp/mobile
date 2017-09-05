@@ -82,6 +82,18 @@ function signupTab() {
 	document.getElementById("membership-signin").style.display = "none";
 	document.getElementById("membership-signup").style.display = "block";
 }
+// Sbop By Products 
+
+$('#menu-ShopByProduct').click(function() {
+  $('#menu-ShopByProduct,#sideNavTop,#account_icon ').toggleClass('active')
+})
+
+$(document).click(function(e) {
+  var accountClick = $("#menu-ShopByProduct, #sideNavTop, #account_icon");
+  if (!accountClick.is(e.target) && accountClick.has(e.target).length === 0) {
+    accountClick.removeClass('active')
+  }
+});
 
 
 // FILE END
