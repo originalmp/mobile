@@ -1,35 +1,39 @@
 // JavaScript Document
-//
 
 
 // Side Menu Open
 function openNav() {
-    document.body.style.overflowX = "hidden";
+    document.body.classList.add("left-side-menu-active");
+ document.body.style.overflowX = "hidden";
     document.getElementById("main").style.marginLeft = "80%";
-    document.getElementById("main").classList.add("active");
-	document.getElementById("openmenu").style.display = "none";
-	document.getElementById("closemenu").innerHTML = "&times;";
-    document.getElementById("mySidenav").style.width = "80%";
-    document.getElementById("mySidenav").classList.add("active");
+    document.getElementById("main").classList.add("disabled");
+    document.getElementById("left-side-push-menu").style.width = "80%";
+    document.getElementById("left-side-push-menu").classList.add("active");
     document.getElementById("sideNavTop").style.display = "block";	
-    document.getElementById("innerMenu").style.display = "block";
+    document.getElementById("main_navigation").style.display = "block";
     document.getElementById("body-content").classList.add("disable");
+    document.getElementById("tab-bar-left").classList.add("active");
+	
 
 }
 // Side Menu Close
 function closeNav() {
-    document.body.style.overflowX = "auto";	
+    document.body.classList.remove("left-side-menu-active");
+document.body.style.overflowX = "auto";	
     document.getElementById("main").style.marginLeft= "0";
-	document.getElementById("main").classList.remove("active");
-	document.getElementById("openmenu").style.display = "block";
-	document.getElementById("closemenu").innerHTML = "";
-    document.getElementById("mySidenav").classList.remove("active");
-    document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("main").classList.remove("disabled");
+    document.getElementById("left-side-push-menu").classList.remove("active");
+    document.getElementById("left-side-push-menu").style.width = "0";
     document.getElementById("sideNavTop").style.display = "none";	
-    document.getElementById("innerMenu").style.display = "none";
+    document.getElementById("main_navigation").style.display = "none";
     document.getElementById("body-content").classList.remove("disable");
+	    document.getElementById("tab-bar-left").classList.remove("active");
 }
 
+
+
+
+// Home Page Popups
 // Shopping Cart Popout
 $('#mobile-cart').click(function() {
   $('.cartPopup, .cart-icon').toggleClass('active')
@@ -55,19 +59,17 @@ $(document).click(function(e) {
   }
 });
 
-// My Account menu Active
-$('#my-account, #close-Sidemenu').click(function() {
-  $('.account-icon, #account-access, #my-account, #mySidenav, #sideNavTop, #innerMenu, #closemenu, #topmenu-GPS-icon, #close-Sidemenu, #account_icon, #account_exit-icon, #side-menu-top').toggleClass('open')
-})
+// LEFT-SIDE-PUSH-MENU - Activate My Account Area
+function myaccountOpen() {
+    document.getElementById("left-side-push-menu").classList.add("myaccount");	
+}
+// LEFT-SIDE-PUSH-MENU - Deactivate My Account Area
+function myaccountClose() {
+    document.getElementById("left-side-push-menu").classList.remove("myaccount");		
+}
 
-$(document).click(function(e) {
-  var accountClick = $("#my-account, #close-Sidemenu, .account-icon, #account-access, #mySidenav, #sideNavTop, #innerMenu, #closemenu, #topmenu-GPS-icon, #close-Sidemenu, #account_icon, #account_exit-icon, #side-menu-top");
-  if (!accountClick.is(e.target) && accountClick.has(e.target).length === 0) {
-    accountClick.removeClass('open')
-  }
-});
 
-// Select Login Tab
+// LEFT-SIDE-PUSH-MENU - My Account - Activate Login Tab
 function loginTab() {
     document.getElementById("signup-tab").classList.remove("active-tab-item");
 	document.getElementById("login-tab").classList.add("active-tab-item");
@@ -75,25 +77,97 @@ function loginTab() {
 	document.getElementById("membership-signup").style.display = "none";
 
 }
-// Select Signup Tab
+// LEFT-SIDE-PUSH-MENU - My Account - Activate 
 function signupTab() {
     document.getElementById("login-tab").classList.remove("active-tab-item");
 	document.getElementById("signup-tab").classList.add("active-tab-item");
 	document.getElementById("membership-signin").style.display = "none";
 	document.getElementById("membership-signup").style.display = "block";
 }
-// Sbop By Products 
 
-$('#menu-ShopByProduct').click(function() {
-  $('#menu-ShopByProduct,#sideNavTop,#account_icon ').toggleClass('active')
+
+
+
+// LEFT-SIDE-PUSH-MENU - Activate Browse All Products
+function browseproductsEnable() {
+    document.getElementById("left-side-push-menu").classList.add("browseproducts");	
+}
+// LEFT-SIDE-PUSH-MENU - Deactivate Browse All Products
+function browseproductsDisable() {
+    document.getElementById("left-side-push-menu").classList.remove("browseproducts");		
+}
+
+$('#closeBrowseProducts, #sidemenu-ShopByProducts-exit-icon, #retunHome, #sidemenu_logo').click(function() {
+  $('#menu-item-1, #menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10').removeClass('deactivate-item');
+    $('#menu-item-1').removeClass('activate-item');
+    $('#allCategories_header').removeClass('enable');
 })
 
-$(document).click(function(e) {
-  var accountClick = $("#menu-ShopByProduct, #sideNavTop, #account_icon");
-  if (!accountClick.is(e.target) && accountClick.has(e.target).length === 0) {
-    accountClick.removeClass('active')
+// LEFT-SIDE-PUSH-MENU - Browse All Products - Sub Menu
+
+$('#menu-item-1').click(function() {
+  $('#menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10').toggleClass('deactivate-item');
+    $('#menu-item-1').toggleClass('activate-item');
+    $('#allCategories_header').toggleClass('enable');
+})
+
+$('#menu-item-2').click(function() {
+  $('#menu-item-1, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10').toggleClass('deactivate-item');
+    $('#menu-item-2').toggleClass('activate-item');
+	    $('#allCategories_header').toggleClass('enable');
+})
+$('#menu-item-3').click(function() {
+  $('#menu-item-2, #menu-item-1, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10').toggleClass('deactivate-item');
+    $('#menu-item-3').toggleClass('activate-item');
+	    $('#allCategories_header').toggleClass('enable');
+})
+$('#menu-item-4').click(function() {
+  $('#menu-item-2, #menu-item-3, #menu-item-1, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10').toggleClass('deactivate-item');
+    $('#menu-item-4').toggleClass('activate-item');
+	    $('#allCategories_header').toggleClass('enable');
+})
+$('#menu-item-5').click(function() {
+  $('#menu-item-2, #menu-item-3, #menu-item-4, #menu-item-1, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10').toggleClass('deactivate-item');
+    $('#menu-item-5').toggleClass('activate-item');
+	    $('#allCategories_header').toggleClass('enable');
+})
+$('#menu-item-6').click(function() {
+  $('#menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-1, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10').toggleClass('deactivate-item');
+    $('#menu-item-6').toggleClass('activate-item');
+	    $('#allCategories_header').toggleClass('enable');
+})
+$('#menu-item-7').click(function() {
+  $('#menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-1, #menu-item-8, #menu-item-9, #menu-item-10').toggleClass('deactivate-item');
+    $('#menu-item-7').toggleClass('activate-item');
+	    $('#allCategories_header').toggleClass('enable');
+})
+$('#menu-item-8').click(function() {
+  $('#menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-1, #menu-item-9, #menu-item-10').toggleClass('deactivate-item');
+    $('#menu-item-8').toggleClass('activate-item');
+	    $('#allCategories_header').toggleClass('enable');
+})
+$('#menu-item-9').click(function() {
+  $('#menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-1, #menu-item-10').toggleClass('deactivate-item');
+    $('#menu-item-9').toggleClass('activate-item');
+	    $('#allCategories_header').toggleClass('enable');
+})
+$('#menu-item-10').click(function() {
+  $('#menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-1').toggleClass('deactivate-item');
+    $('#menu-item-10').toggleClass('activate-item');
+	    $('#allCategories_header').toggleClass('enable');
+})
+
+$('#closeBrowseProducts, #sidemenu-ShopByProducts-exit-icon, #retunHome, #sidemenu_logo').click(function(e) {
+  var ShopByCategory = $("#closeBrowseProducts, #menu-item-1, #menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10");
+  if (!ShopByCategory.is(e.target) && ShopByCategory.has(e.target).length === 0) {
+    ShopByCategory.removeClass('activate-item')
+  }
+  if (!ShopByCategory.is(e.target) && ShopByCategory.has(e.target).length === 0) {
+    ShopByCategory.removeClass('deactivate-item')
+  }
+  
+    if (!ShopByCategory.is(e.target) && ShopByCategory.has(e.target).length === 0) {
+    ShopByCategory.removeClass('enable')
   }
 });
-
-
 // FILE END

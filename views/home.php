@@ -7,7 +7,7 @@
 
 <div class="listing"><ul class="col4 ">
       <li class="col-md-3 col-xs-6 col-sm-6">
-        <a href="http://ws1dev.canadacomputers.com/product_info.php?cPath=15_1086_210_212&amp;item_id=100443" class="product-info" onclick="_gaq.push(['_trackEvent', 'Web Banners', 'Promo Banner 1', 'HDSEA00017'])">
+        <a href="#">
           <span class="product-img">
             <img src="http://ccimg.canadacomputers.com/Products/140x140/220/730/100443/14975.jpg">
           </span>
@@ -17,7 +17,7 @@
       </li>
     
       <li class="col-md-3 col-xs-6 col-sm-6">
-        <a href="http://ws1dev.canadacomputers.com/product_info.php?cPath=41_534&amp;item_id=077457" class="product-info" onclick="_gaq.push(['_trackEvent', 'Web Banners', 'Promo Banner 2', 'SPLO001385'])">
+           <a href="#">
           <span class="product-img">
             <img src="http://ccimg.canadacomputers.com/Products/140x140/077/077457/95359.jpg">
           </span>
@@ -27,7 +27,7 @@
       </li>
     
       <li class="col-md-3 col-xs-6 col-sm-6">
-        <a href="http://ws1dev.canadacomputers.com/product_info.php?cPath=43_1200_557_559&amp;item_id=100739" class="product-info" onclick="_gaq.push(['_trackEvent', 'Web Banners', 'Promo Banner 3', 'VCGIG00015'])">
+        <a href="#">
           <span class="product-img">
             <img src="http://ccimg.canadacomputers.com/Products/140x140/230/522/100739/26575.png">
           </span>
@@ -37,7 +37,7 @@
       </li>
     
       <li class="col-md-3 col-xs-6 col-sm-6">
-        <a href="http://ws1dev.canadacomputers.com/product_info.php?cPath=26_1207_1206_1460&amp;item_id=103408" class="product-info" onclick="_gaq.push(['_trackEvent', 'Web Banners', 'Promo Banner 4', 'MBMSI00011'])">
+        <a href="#">
           <span class="product-img">
             <img src="http://ccimg.canadacomputers.com/Products/140x140/125/1216/103408/39295.jpg">
           </span>
@@ -47,7 +47,7 @@
       </li>
   
       <li class="col-md-3 col-xs-6 col-sm-6">
-        <a href="http://ws1dev.canadacomputers.com/product_info.php?cPath=43_1200_557_559&amp;item_id=102563" class="product-info" onclick="_gaq.push(['_trackEvent', 'Web Banners', 'Promo Banner 5', 'VCASU00039'])">
+        <a href="#">
           <span class="product-img">
             <img src="http://ccimg.canadacomputers.com/Products/140x140/230/522/102563/16839.png">
           </span>
@@ -57,7 +57,7 @@
       </li>
     
       <li class="col-md-3 col-xs-6 col-sm-6">
-        <a href="http://ws1dev.canadacomputers.com/product_info.php?cPath=4_1210_65&amp;item_id=102842" class="product-info" onclick="_gaq.push(['_trackEvent', 'Web Banners', 'Promo Banner 6', 'CPINT00003'])">
+        <a href="#">
           <span class="product-img">
             <img src="http://ccimg.canadacomputers.com/Products/140x140/240/384/102842/11876.jpg">
           </span>
@@ -67,7 +67,7 @@
       </li>
     
       <li class="col-md-3 col-xs-6 col-sm-6">
-        <a href="http://ws1dev.canadacomputers.com/product_info.php?cPath=4_1210_64&amp;item_id=104544" class="product-info" onclick="_gaq.push(['_trackEvent', 'Web Banners', 'Promo Banner 7', 'CPAMD00003'])">
+        <a href="#">
           <span class="product-img">
             <img src="http://ccimg.canadacomputers.com/Products/140x140/240/381/104544/88970.jpg">
           </span>
@@ -77,7 +77,7 @@
       </li>
     
       <li class="col-md-3 col-xs-6 col-sm-6">
-        <a href="http://ws1dev.canadacomputers.com/product_info.php?cPath=21_273_580&amp;item_id=087148" class="product-info" onclick="_gaq.push(['_trackEvent', 'Web Banners', 'Promo Banner 8', 'PELO009874'])">
+        <a href="#">
           <span class="product-img">
             <img src="http://ccimg.canadacomputers.com/Products/140x140/087/087148/56382.jpg">
           </span>

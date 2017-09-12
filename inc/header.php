@@ -2,7 +2,9 @@
  <!-- COL 1 LEFT -->
 <div id="tab-bar-left" class="col-xs-3 col-sm-3">
   <span id="openmenu"  style="font-size:30px;padding-top: 2px;cursor:pointer" onclick="openNav()">&#9776;</span> 
-  <span id="closemenu" class="" style="font-size:35px;padding-top: 2px;cursor:pointer" onclick="closeNav()"></span>
+  <span id="closemenu" class="" onclick="closeNav()">
+  <img id="exit-icon" class="menu_icon" src="./images/close-white.png" title="Exit Area" alt="Exit">
+  </span>
 </div>
 <!-- COL 2 CENTER -->      
 <div id="tab-bar-center" class="col-md-5 col-xs-5">
@@ -25,6 +27,7 @@
       <a  id="mobile-cart" href="#">
          <img id="shopping-cart" class="menu_icon" src="./images/shopping_cart.png" title="Shopping Cart" alt="Cart">
       </a>
+      
     </div>
   </div>
 </div>

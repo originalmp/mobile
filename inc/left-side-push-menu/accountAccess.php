@@ -1,8 +1,4 @@
 <!-- start accountAccess.PHP-->
-
-<style>
-
-</style>
 <div class="container-fluid">
 
 <!-- Page Header -->

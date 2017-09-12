@@ -1,41 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
 <html>
 <head>
+<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
 <link href="./css/main.css" rel="stylesheet" type="text/css">
-<link href="./css/bootstrap.min.css" rel="stylesheet" >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<style></style>
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/animations.css" rel="stylesheet">
+<script src="./js/jquery.min.js"></script>
 </head>
 <body >
-<!-- START of Side Menu -->
-<div id="mySidenav" class="sidenav">
-<!-- Side menu top -->
+<!-- START of Left Side Push Menu --> <?php include './inc/left-side-push-menu.php'; ?>
+<!-- Main Body --><div id="main" class="">
 
-  <div id="side-menu-top" class="container-fluid">
-    <?php include './inc/sideNav/side-menu-top.php'; ?>
-  </div>
-
-<!--My Account Login -->
-  <div id="account-access" class="">
-    <?php include './inc/sideNav/accountAccess.php'; ?>
-  </div>
-
-
-  <div id="innerMenu" style="none;">
-    <?php include './inc/sideNav/innerMenu.php'; ?>
-  </div>
-
-
-</div>
-<!-- END of Side Menu id="mySidenav" class="sidenav" --> 
-
-<!-- Main Body -->
-<div id="main" class=""> 
-  
-  <!-- Main Menu-->
-  <nav id="header-bar" class="container-fluid">
+<!-- Main Menu--> <nav id="header-bar" class="container-fluid">
     <?php include './inc/header.php'; ?>
   </nav>
   
@@ -52,12 +30,12 @@
   <div id="body-content">
     <?php include './views/home.php'; ?>
   </div>
+  
+  
 </div>
 <!-- END of (div id="main") --> 
 
-<script>
-// TEST CODE HERE
-</script> 
+
 <script src="./js/bootstrap.min.js"  type="text/javascript"></script> 
 <script src="./js/main.js" type="text/javascript"></script>
 </body>

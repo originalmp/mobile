@@ -1,13 +1,220 @@
+<!-- Start of browse-all-categories.php -->
+
+<style>
+
+div#allCategories_header {
+    color: #FFDD00;
+    font-size: 25px;
+    width: 100%;
+    line-height: 20px;
+    display: inline-block;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.45);
+	position: fixed;
+	    background: #013366;
+		    z-index: 2;
+}
+
+
+div#browse-all-categories h4 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+div#do-not-say-1,
+div#do-not-say-2,
+div#do-not-say-3,
+div#do-not-say-4,
+div#do-not-say-5,
+div#do-not-say-6,
+div#do-not-say-7,
+div#do-not-say-8,
+div#do-not-say-9,
+div#do-not-say-10{
+display:none;	
+	}
+	
+	ul.submenu {
+    padding: 0;
+}
+/*
+
+.slideinfromleft{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 10s;	
+	-webkit-animation-duration: 10s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+.slideinfromleft-1{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 0.8s;	
+	-webkit-animation-duration: 0.8s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+.slideinfromleft-2{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+.slideinfromleft-3{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 1.4s;	
+	-webkit-animation-duration: 1.4s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+.slideinfromleft-4{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 1.9s;	
+	-webkit-animation-duration: 1.9s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+.slideinfromleft-5{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 2.1s;	
+	-webkit-animation-duration: 2.1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+.slideinfromleft-6{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 2.2s;	
+	-webkit-animation-duration: 2.2s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+.slideinfromleft-7{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 2.3s;	
+	-webkit-animation-duration: 2.3s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+.slideinfromleft-8{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 2.8s;	
+	-webkit-animation-duration: 2.8s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+.slideinfromleft-9{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 3.2s;	
+	-webkit-animation-duration: 3.2s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+.slideinfromleft-10{
+	animation-name: slideinfromleft;
+	-webkit-animation-name: slideinfromleft;	
+
+	animation-duration: 3.6s;	
+	-webkit-animation-duration: 3.6s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+@keyframes slideinfromleft {
+	0% {
+		transform: translateX(-150%);
+	}
+			
+	100% {
+		transform: translateX(0%);
+	}	
+}
+
+@-webkit-keyframes slideinfromleft {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+		
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}*/
+
+</style>
+<a id="closeBrowseProducts" href="#" >
+<div id="allCategories_header">
+  Shop By Category
+</div>
+</a>
+
 <!-- Start All Product Menu -->	
 
-<ul class="submenu" style="display: block;">
+<ul class="submenu" >
 						<li>
 							<nav>
 								<ul class="side-nav">
 									<div class="am-panel-group" id="accordion">
 
 										
-										<div class="am-panel am-panel-default">
+										<!-- New Menu Item -->	<div id="menu-item-1" class="slideinfromleft-1 am-panel am-panel-default">
 											<div class="am-panel-hd">
 												<h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}">
 													Computer Hardware													<em class="am-icon-plus cc_icon"></em>
@@ -84,7 +291,7 @@
 											</div>
 										</div>
 										
-										<div class="am-panel am-panel-default">
+										<!-- New Menu Item -->	<div id="menu-item-2" class="slideinfromleft-2 am-panel am-panel-default">
 											<div class="am-panel-hd">
 												<h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-2'}">
 													Desktop PC &amp; Servers													<em class="am-icon-plus cc_icon"></em>
@@ -119,7 +326,7 @@
 											</div>
 										</div>
 										
-										<div class="am-panel am-panel-default">
+										<!-- New Menu Item -->	<div id="menu-item-3" class="slideinfromleft-3 am-panel am-panel-default">
 											<div class="am-panel-hd">
 												<h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-3'}">
 													Laptops &amp; Tablets													<em class="am-icon-plus cc_icon"></em>
@@ -180,7 +387,7 @@
 											</div>
 										</div>
 										
-										<div class="am-panel am-panel-default">
+										<!-- New Menu Item -->	<div id="menu-item-4" class="slideinfromleft-4 am-panel am-panel-default">
 											<div class="am-panel-hd">
 												<h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-4'}">
 													TV &amp; Home Theatre													<em class="am-icon-plus cc_icon"></em>
@@ -295,7 +502,7 @@
 											</div>
 										</div>
 										
-										<div class="am-panel am-panel-default">
+										<!-- New Menu Item -->	<div id="menu-item-5" class="slideinfromleft-5 am-panel am-panel-default">
 											<div class="am-panel-hd">
 												<h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-5'}">
 													Phone &amp; Electronics													<em class="am-icon-plus cc_icon"></em>
@@ -412,7 +619,7 @@
 											</div>
 										</div>
 										
-										<div class="am-panel am-panel-default">
+										<!-- New Menu Item -->	<div id="menu-item-6" class="slideinfromleft-6 am-panel am-panel-default">
 											<div class="am-panel-hd">
 												<h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-6'}">
 													Cameras													<em class="am-icon-plus cc_icon"></em>
@@ -473,7 +680,7 @@
 											</div>
 										</div>
 										
-										<div class="am-panel am-panel-default">
+										<!-- New Menu Item -->	<div id="menu-item-7" class="slideinfromleft-7 am-panel am-panel-default">
 											<div class="am-panel-hd">
 												<h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-7'}">
 													Software &amp; Gaming													<em class="am-icon-plus cc_icon"></em>
@@ -516,7 +723,7 @@
 											</div>
 										</div>
 										
-										<div class="am-panel am-panel-default">
+										<!-- New Menu Item -->	<div id="menu-item-8" class="slideinfromleft-8 am-panel am-panel-default">
 											<div class="am-panel-hd">
 												<h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-8'}">
 													Surveillance &amp; Home Automation													<em class="am-icon-plus cc_icon"></em>
@@ -579,7 +786,7 @@
 											</div>
 										</div>
 										
-										<div class="am-panel am-panel-default">
+										<!-- New Menu Item -->	<div id="menu-item-9" class="slideinfromleft-9 am-panel am-panel-default">
 											<div class="am-panel-hd">
 												<h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-9'}">
 													Cables &amp; Tools													<em class="am-icon-plus cc_icon"></em>
@@ -674,7 +881,7 @@
 											</div>
 										</div>
 										
-										<div class="am-panel am-panel-default">
+										<!-- New Menu Item -->	<div id="menu-item-10" class="slideinfromleft-10 am-panel am-panel-default">
 											<div class="am-panel-hd">
 												<h4 class="am-panel-title am-collapsed" data-am-collapse="{parent: '#accordion', target: '#do-not-say-10'}">
 													Business Solutions													<em class="am-icon-plus cc_icon"></em>
@@ -706,4 +913,6 @@
 
 
 
-<!-- End All Product Menu -->	
+<!-- End All Product Menu -->
+<!-- end of browse-all-categories.php -->
+	
