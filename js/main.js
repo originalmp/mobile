@@ -59,11 +59,11 @@ $(document).click(function(e) {
   }
 });
 
-// LEFT-SIDE-PUSH-MENU - Activate My Account Area
+// LEFT-SIDE-PUSH-MENU - Activate My Account - Area
 function myaccountOpen() {
     document.getElementById("left-side-push-menu").classList.add("myaccount");	
 }
-// LEFT-SIDE-PUSH-MENU - Deactivate My Account Area
+// LEFT-SIDE-PUSH-MENU - Deactivate My Account - Area
 function myaccountClose() {
     document.getElementById("left-side-push-menu").classList.remove("myaccount");		
 }
@@ -157,7 +157,7 @@ $('#menu-item-10').click(function() {
 	    $('#allCategories_header').toggleClass('enable');
 })
 
-$('#closeBrowseProducts, #sidemenu-ShopByProducts-exit-icon, #retunHome, #sidemenu_logo').click(function(e) {
+$('#closeBrowseProducts, #sidemenu-ShopByProducts-exit-icon, #retunHome, #sidemenu_logo, #gps_icon').click(function(e) {
   var ShopByCategory = $("#closeBrowseProducts, #menu-item-1, #menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10");
   if (!ShopByCategory.is(e.target) && ShopByCategory.has(e.target).length === 0) {
     ShopByCategory.removeClass('activate-item')
@@ -170,4 +170,40 @@ $('#closeBrowseProducts, #sidemenu-ShopByProducts-exit-icon, #retunHome, #sideme
     ShopByCategory.removeClass('enable')
   }
 });
+
+
+
+// LEFT-SIDE-PUSH-MENU -  Activate Store Locations - area
+function storelocationsOpen() {
+    document.getElementById("left-side-push-menu").classList.add("store-locations");	
+}
+// LEFT-SIDE-PUSH-MENU - Deactivate Store Locations - area
+function storelocationsClose() {
+    document.getElementById("left-side-push-menu").classList.remove("store-locations");		
+}
+// toggle store locations (show/ hide)
+$('#ajax').click(function() {
+  $('#barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
+    $('#ajax-location').toggleClass('activate-menuitem');
+})
+
+
+$('#barrie').click(function() {
+  $('#ajax-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
+    $('#barrie-location').toggleClass('activate-menuitem');
+})
+
+
+
+// remove all added atriburtes 
+$('.locations-menu-item, #sidemenu-close-myaccount, #retunHome, #main_logo').click(function(e) {
+  var ShowStoreLocations = $("#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location");
+  if (!ShowStoreLocations.is(e.target) && ShowStoreLocations.has(e.target).length === 0) {
+    ShowStoreLocations.removeClass('activate-menuitem')
+  }
+  if (!ShowStoreLocations.is(e.target) && ShowStoreLocations.has(e.target).length === 0) {
+    ShowStoreLocations.removeClass('deactivate-menuitem')
+  }
+});
+
 // FILE END

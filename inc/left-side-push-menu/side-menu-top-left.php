@@ -2,13 +2,13 @@
 <div class="side-menu-left">
 
 <span id="sidemenu-open-myaccount">
-   <a href="#" onclick="myaccountOpen()">
+   <a href="#" onclick="myaccountOpen();storelocationsClose()">
     <img id="myaccount_icon" class="menu_icon" src="./images/my-account-icon.png" title="My Account" alt="Open">
   </a>    
 </span>
 
 <span id="sidemenu-close-myaccount"> 
-  <a href="#" onclick="myaccountClose()">   
+  <a href="#" onclick="myaccountClose();storelocationsClose()">   
     <img id="myaccount-exit-icon" class="menu_icon" src="./images/close-black.png" title="Exit Area" alt="Exit">
   </a>  
 </span>

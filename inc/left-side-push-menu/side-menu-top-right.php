@@ -6,7 +6,7 @@
 
 <!-- Store Locator Icon -->
 <span id="topmenu-GPS-icon" class="">
-<a id="side_menu_right" href="#">
+<a id="side_menu_right" href="#" onclick="storelocationsOpen();myaccountClose();browseproductsDisable()">
 <img id="gps_icon" class="menu_icon" src="./images/gps_icon.png" title="Locate Store" alt="GPS Icon">
 </a>
 </span>
@@ -15,11 +15,11 @@
 <!-- sidenav top bar (Right) - Exit Icons -->
 <div id="side-menu-right-exit" class="side-menu-right">
 <!-- Home Icon  -->
-<span id="retunHome" class="" style="display:none;" onclick="closeNav();myaccountClose();browseproductsDisable()"> 
+<span id="retunHome" class="" style="display:none;" onclick="closeNav();myaccountClose();browseproductsDisable();storelocationsClose()"> 
 <img class="menu_icon" src="./images/home.png" title="Home" alt="Home">
 </span>
 <!-- Close Icon -->
-<span id="close-sidemenu" class="" onclick="closeNav()">
+<span id="close-sidemenu" class="" onclick="closeNav();myaccountClose();browseproductsDisable();storelocationsClose()">
   <img id="exit-icon" class="menu_icon" src="./images/close-white.png" title="Exit Area" alt="Exit">
   </span>
 
