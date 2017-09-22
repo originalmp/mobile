@@ -7,15 +7,15 @@
   </a>    
 </span>
 
-<span id="sidemenu-close-myaccount"> 
+<span id="sidemenu-close-area"> 
   <a href="#" onclick="myaccountClose();storelocationsClose()">   
-    <img id="myaccount-exit-icon" class="menu_icon" src="./images/close-black.png" title="Exit Area" alt="Exit">
+    <img id="-blk-exit-area-icon" class="menu_icon" src="./images/close-black.png" title="Exit Area" alt="Exit">
   </a>  
 </span>
 
 <span id="sidemenu-close-ShopByProducts">  
   <a href="#" onclick="browseproductsDisable()">  
-    <img id="sidemenu-ShopByProducts-exit-icon" class="menu_icon" src="./images/close-white.png" title="Exit Area" alt="Exit">
+    <img id="wt-exit-area-icon" class="menu_icon" src="./images/close-white.png" title="Exit Area" alt="Exit">
     </a>
 </span>
 
