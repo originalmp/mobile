@@ -774,6 +774,7 @@ div#allCategories_header.enable::after {
 .left-side-menu-active .store-locations #sidemenu-open-myaccount
 {display: none !important;}
 /**************** LEFT-SIDE-PUSH-MENU - elements Disabled untill IT'S Activated  ****************/
+#left-side-push-menu .map-container,
 #left-side-push-menu #storeLocations,
 #left-side-push-menu .store-location,
 #left-side-push-menu .deactivate-menuitem,
@@ -790,7 +791,8 @@ div#allCategories_header.enable::after {
 .left-side-menu-active .store-locations #sidemenu-close-area,
 .left-side-menu-active .store-locations .activate-menuitem ul.store-location,
 .left-side-menu-active .store-locations .activate-menuitem #locations-nav,
-#left-side-push-menu .menuitem-active #Store-Details-Header
+#left-side-push-menu .menuitem-active #Store-Details-Header,
+#left-side-push-menu .menuitem-active .activate-menuitem .map-container
 {display: block !important;}
 
 /**************** LEFT-SIDE-PUSH-MENU - Store Locations Area  ****************/
@@ -931,8 +933,6 @@ div#allCategories_header.enable::after {
 }
 .left-side-menu-active .store-locations .menuitem-active #locations-body {
 	margin-top: 20px;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 
@@ -958,11 +958,12 @@ div#allCategories_header.enable::after {
 }
 
 /*store links */
-a.store-manager,
-a.store-email,
-li.store-hours,
-li.store-phone a,
-li.store-address a {
+ul.store-location a.store-manager,
+ul.store-location a.store-email,
+ul.store-location a.email,
+ul.store-location li.store-hours,
+ul.store-location li.store-phone a,
+ul.store-location li.store-address a {
     font-size: 12px !important;
 }
 .activate-menuitem ul.store-location {
@@ -973,5 +974,9 @@ li.store-address a {
     max-width: 400px;
 	width:100%;
 }
-
+.left-side-menu-active .store-locations #map {
+    height: 300px;
+    width: 300px;
+    margin-bottom: -75px;
+}
 /* ********************************************************** */

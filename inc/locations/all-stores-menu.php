@@ -1,5 +1,6 @@
 <!-- Start of /inc/locations/all-stores-menu.php -->
 
+
 <div id="locations-nav">
   <ul id="all-locations">
     
@@ -48,63 +49,63 @@
     <!-- Start of div id="hamilton-location" -->
     <div id="hamilton-location" class="menu_item">
       <li class="locations-menu-item store-name" id="hamilton">Hamilton</li><br />
-             <?php include './inc/locations/stores/greenfieldpark.php'; ?> 
+             <?php include './inc/locations/stores/hamilton.php'; ?> 
     </div>
     <!-- END div id="hamilton-location" --> 
     
     <!-- Start of div id="hamiltonmountain-location" -->
     <div id="hamiltonmountain-location" class="menu_item">
       <li class="locations-menu-item store-name" id="hamiltonmountain">Hamilton Mountain</li><br />
-             <?php include './inc/locations/stores/greenfieldpark.php'; ?> 
+             <?php include './inc/locations/stores/hamiltonmountain.php'; ?> 
     </div>
     <!-- END div id="hamiltonmountain-location" --> 
     
     <!-- Start of div id="kanata-location" -->
     <div id="kanata-location" class="menu_item">
       <li class="locations-menu-item store-name" id="kanata">Kanata</li><br />
-             <?php include './inc/locations/stores/greenfieldpark.php'; ?> 
+             <?php include './inc/locations/stores/kanata.php'; ?> 
     </div>
     <!-- END div id="kanata-location" --> 
     
     <!-- Start of div id="kingston-location" -->
     <div id="kingston-location" class="menu_item">
       <li class="locations-menu-item store-name" id="kingston">Kingston</li><br />
-             <?php include './inc/locations/stores/greenfieldpark.php'; ?> 
+             <?php include './inc/locations/stores/kingston.php'; ?> 
     </div>
     <!-- END div id="kingston-location" --> 
     
     <!-- Start of div id="laval-location" -->
     <div id="laval-location" class="menu_item">
       <li class="locations-menu-item store-name" id="laval">Laval</li><br />
-             <?php include './inc/locations/stores/greenfieldpark.php'; ?> 
+             <?php include './inc/locations/stores/laval.php'; ?> 
     </div>
     <!-- END div id="laval-location" --> 
     
     <!-- Start of div id="london-location" -->
     <div id="london-location" class="menu_item">
       <li class="locations-menu-item store-name" id="london">London</li><br />
-             <?php include './inc/locations/stores/greenfieldpark.php'; ?> 
+             <?php include './inc/locations/stores/london.php'; ?> 
     </div>
     <!-- END div id="london-location" --> 
     
     <!-- Start of div id="markhamunionville-location" -->
     <div id="markhamunionville-location" class="menu_item">
       <li class="locations-menu-item store-name" id="markhamunionville">Markham Unionville</li><br />
-             <?php include './inc/locations/stores/greenfieldpark.php'; ?> 
+             <?php include './inc/locations/stores/markhamunionville.php'; ?> 
     </div>
     <!-- END div id="markhamunionville-location" --> 
     
     <!-- Start of div id="midtown-location" -->
     <div id="midtown-location" class="menu_item">
       <li class="locations-menu-item store-name" id="midtown">Midtown Toronto</li><br />
-             <?php include './inc/locations/stores/greenfieldpark.php'; ?> 
+             <?php include './inc/locations/stores/midtown.php'; ?> 
     </div>
     <!-- END div id="midtown-location" --> 
     
     <!-- Start of div id="milton-location" -->
     <div id="milton-location" class="menu_item">
       <li class="locations-menu-item store-name" id="milton">Milton</li>
-             <?php include './inc/locations/stores/greenfieldpark.php'; ?> 
+             <?php include './inc/locations/stores/milton.php'; ?> 
     </div>
     <!-- END div id="milton-location" --> 
     

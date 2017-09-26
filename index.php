@@ -8,6 +8,9 @@
 <link href="./css/bootstrap.min.css" rel="stylesheet">
 <link href="./css/animations.css" rel="stylesheet">
 <script src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="./js/jquery-scrollto.js"></script>
 </head>
 <body >
 <!-- START of Left Side Push Menu --> <?php include './inc/left-side-push-menu.php'; ?>

@@ -1,0 +1,31 @@
+<!-- START of ./inc/locations/stores/etobicoke-map.php  -->
+
+     <style>
+       #map {
+        height: 300px;
+        width: 300px;
+       }
+    </style>
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+  var locc = new google.maps.LatLng(43.6155724,-79.5589671,21);
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: locc
+        });
+		var customMarker = 'http://www.canadacomputers.com/images/lo/marker.png';
+		var marker = new google.maps.Marker({
+          position: locc,
+          icon: customMarker,
+		  title: '1800 The Queensway, Etobicoke, ON M9C-5H5, Canada.', 
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC89Y2zGm4SsUtmJSpJq7hEqlG1MSjriIA&callback=initMap">
+    </script>
+
+<!-- END of ./inc/locations/stores/etobicoke-map.php -->
