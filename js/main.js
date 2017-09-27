@@ -176,24 +176,31 @@ $('#closeBrowseProducts, #sidemenu-ShopByProducts-exit-icon, #sidemenu-close-Sho
 
 // LEFT-SIDE-PUSH-MENU -  Activate Store Locations - area
 function storelocationsOpen() {
-    document.getElementById("left-side-push-menu").classList.add("store-locations");
-				google.maps.event.trigger(map, 'resize');	
+    document.getElementById("left-side-push-menu").classList.add("store-locations");	
 }
 // LEFT-SIDE-PUSH-MENU - Deactivate Store Locations - area
 function storelocationsClose() {
     document.getElementById("left-side-push-menu").classList.remove("store-locations");		
 }
 
+// Store Details opens Scroll Div to Top
+$('.store-name').click(function() {    
+    $("#show-all-stores").slideUp(1000);   
+//    $("#show-all-stores").slideUp(1000);    
+})
+
 
 
 // toggle store locations (show/ hide)
+
+
 
 // ajax-location
 $('#ajax').click(function() {
   $('#barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#ajax-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-			google.maps.event.trigger(map, 'resize');	
+				
 })
 
 // barrie-location
@@ -201,7 +208,7 @@ $('#barrie').click(function() {
   $('#ajax-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#barrie-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-			google.maps.event.trigger(map, 'resize');	
+				
 })
 
 // brampton-location
@@ -209,7 +216,7 @@ $('#brampton').click(function() {
   $('#ajax-location, #barrie-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#brampton-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-			google.maps.event.trigger(map, 'resize');	
+				
 })
 
 // burlington-location
@@ -217,7 +224,7 @@ $('#burlington').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#burlington-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-			google.maps.event.trigger(map, 'resize');	
+				
 })
 
 // etobicoke-location
@@ -225,7 +232,7 @@ $('#etobicoke').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#etobicoke-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // greenfieldpark-location
@@ -233,7 +240,7 @@ $('#greenfieldpark').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#greenfieldpark-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // hamilton-location
@@ -241,7 +248,7 @@ $('#hamilton').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#hamilton-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 
@@ -250,7 +257,7 @@ $('#hamiltonmountain').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#hamiltonmountain-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // Kanata
@@ -258,7 +265,7 @@ $('#kanata').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#kanata-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // Kingston
@@ -266,7 +273,7 @@ $('#kingston').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#kingston-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 
@@ -275,7 +282,7 @@ $('#laval').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#laval-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // London
@@ -283,7 +290,7 @@ $('#london').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#london-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 
@@ -292,7 +299,7 @@ $('#markhamunionville').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#markhamunionville-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // Midtown Toronto
@@ -300,7 +307,7 @@ $('#midtown').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#midtown-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // Milton
@@ -308,7 +315,7 @@ $('#milton').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#milton-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // Mississauga
@@ -316,7 +323,7 @@ $('#mississauga').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#mississauga-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 
@@ -325,7 +332,7 @@ $('#mississauganorth').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#mississauganorth-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // Mississauga South
@@ -333,7 +340,7 @@ $('#mississaugasouth').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#mississaugasouth-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // Montreal Downtown
@@ -341,14 +348,14 @@ $('#montrealdt').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#montrealdt-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Newmarket
 $('#newmarket').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#newmarket-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // North York
@@ -356,21 +363,21 @@ $('#northyork').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#northyork-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Oakville East/Mississauga West
 $('#oakvilleeast').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#oakvilleeast-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Oshawa
 $('#oshawa').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#oshawa-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 // Ottawa Downtown
@@ -378,84 +385,86 @@ $('#ottawadowntown').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#ottawadowntown-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Ottawa Merivale
 $('#ottawamerivale').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#ottawamerivale-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Ottawa Orleans
 $('#ottawaorleans').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#ottawaorleans-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Richmond Hill
 $('#richmondhill').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#richmondhill-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Scarborough
 $('#scarborough').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#scarborough-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+	
 })
+
+
 // St. Catharines
 $('#stcatharines').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#stcatharines-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Toronto 284
 $('#toronto284').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#toronto284-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Toronto 366
 $('#toronto366').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#toronto366-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Vaughan
 $('#vaughan').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #waterloo-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#vaughan-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Waterloo
 $('#waterloo').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #westisland-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#waterloo-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // West Island
 $('#westisland').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #whitby-location').toggleClass('deactivate-menuitem');
     $('#westisland-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 // Whitby
 $('#whitby').click(function() {
   $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location').toggleClass('deactivate-menuitem');
     $('#whitby-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
-				google.maps.event.trigger(map, 'resize');	
+					
 })
 
 
