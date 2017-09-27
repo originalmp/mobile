@@ -27,7 +27,7 @@ function closeNav() {
     document.getElementById("sideNavTop").style.display = "none";	
     document.getElementById("main_navigation").style.display = "none";
     document.getElementById("body-content").classList.remove("disable");
-	    document.getElementById("tab-bar-left").classList.remove("active");
+	document.getElementById("tab-bar-left").classList.remove("active");
 }
 
 
@@ -86,8 +86,6 @@ function signupTab() {
 }
 
 
-
-
 // LEFT-SIDE-PUSH-MENU - Activate Browse All Products
 function browseproductsEnable() {
     document.getElementById("left-side-push-menu").classList.add("browseproducts");	
@@ -97,11 +95,7 @@ function browseproductsDisable() {
     document.getElementById("left-side-push-menu").classList.remove("browseproducts");		
 }
 
-$('#closeBrowseProducts, #sidemenu-ShopByProducts-exit-icon, #retunHome, #sidemenu_logo').click(function() {
-  $('#menu-item-1, #menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10').removeClass('deactivate-item');
-    $('#menu-item-1').removeClass('activate-item');
-    $('#allCategories_header').removeClass('enable');
-})
+
 
 // LEFT-SIDE-PUSH-MENU - Browse All Products - Sub Menu
 
@@ -176,11 +170,9 @@ $('#menu-item-10').click(function() {
 // Remove All Added Browse by Category Attributes 
 
 $('#closeBrowseProducts, #sidemenu-ShopByProducts-exit-icon, #sidemenu-close-ShopByProducts, #retunHome, #sidemenu_logo, #gps_icon').click(function() {
-  $('#menu-item-1, #menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10').removeClass('deactivate-item');
-    $('#menu-item-1, #menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10').removeClass('activate-item');
-	    $('#allCategories_header').removeClass('enable');
+ $('.am-panel').removeClass('deactivate-item activate-item');
+ $('#allCategories_header').removeClass('enable');
 })
-
 
 // LEFT-SIDE-PUSH-MENU -  Activate Store Locations - area
 function storelocationsOpen() {
@@ -202,9 +194,6 @@ $('#ajax').click(function() {
     $('#ajax-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
 			google.maps.event.trigger(map, 'resize');	
-
-
-
 })
 
 // barrie-location
@@ -213,7 +202,6 @@ $('#barrie').click(function() {
     $('#barrie-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
 			google.maps.event.trigger(map, 'resize');	
-
 })
 
 // brampton-location
@@ -222,7 +210,6 @@ $('#brampton').click(function() {
     $('#brampton-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
 			google.maps.event.trigger(map, 'resize');	
-
 })
 
 // burlington-location
@@ -231,7 +218,6 @@ $('#burlington').click(function() {
     $('#burlington-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
 			google.maps.event.trigger(map, 'resize');	
-
 })
 
 // etobicoke-location
@@ -240,7 +226,6 @@ $('#etobicoke').click(function() {
     $('#etobicoke-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
 				google.maps.event.trigger(map, 'resize');	
-
 })
 
 // greenfieldpark-location
@@ -249,7 +234,6 @@ $('#greenfieldpark').click(function() {
     $('#greenfieldpark-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
 				google.maps.event.trigger(map, 'resize');	
-
 })
 
 // hamilton-location
@@ -292,9 +276,6 @@ $('#laval').click(function() {
     $('#laval-location').toggleClass('activate-menuitem');
 	$('#storeLocations').toggleClass('menuitem-active');
 				google.maps.event.trigger(map, 'resize');	
-				$('#locations-body').scrollTop(0);
-				$('html, body').animate({scrollTop:0}, 'slow');
-    return false;
 })
 
 // London
@@ -479,10 +460,8 @@ $('#whitby').click(function() {
 
 
 // remove all added Store Location Atriburtes 
-
 $('#sidemenu-close-area, #retunHome, #sidemenu_logo, #gps_icon, #closeStoreDetails').click(function() {
- $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').removeClass('deactivate-menuitem');
- $('#ajax-location, #barrie-location, #brampton-location, #burlington-location, #etobicoke-location, #greenfieldpark-location, #hamilton-location, #hamiltonmountain-location, #kanata-location, #kingston-location, #laval-location, #london-location, #markhamunionville-location, #midtown-location, #milton-location, #mississauga-location, #mississauganorth-location, #mississaugasouth-location, #montrealdt-location, #newmarket-location, #northyork-location, #oakvilleeast-location, #oshawa-location, #ottawadowntown-location, #ottawamerivale-location, #ottawaorleans-location, #richmondhill-location, #scarborough-location, #stcatharines-location, #toronto284-location, #toronto366-location, #vaughan-location, #waterloo-location, #westisland-location, #whitby-location').removeClass('activate-menuitem');
+ $('#show-all-stores .menu_item').removeClass('deactivate-menuitem activate-menuitem');
  $('#storeLocations').removeClass('menuitem-active');
 })
 

@@ -116,19 +116,19 @@
     </div>
     <!-- END div id="mississauga-location" --> 
     
-    <!-- Start of div id="mississauganorth-location" -->
+    <!-- Start of div id="mississauganorth-location"  -/->
     <div id="mississauganorth-location" class="menu_item">
       <li class="locations-menu-item store-name" id="mississauganorth">Mississauga North</li>
-             <?php include './inc/locations/stores/mississauganorth.php'; ?>       
+             <-/-- ?php include './inc/locations/stores/mississauganorth.php'; ?>      
     </div>
-    <!-- END div id="mississauganorth-location" --> 
+    <!-/- END div id="mississauganorth-location" --> 
     
-    <!-- Start of div id="mississaugasouth-location" -->
+    <!-- Start of div id="mississaugasouth-location" -/->
     <div id="mississaugasouth-location" class="menu_item">
       <li class="locations-menu-item store-name" id="mississaugasouth">Mississauga South</li>
-             <?php include './inc/locations/stores/mississaugasouth.php'; ?>       
+             <  ?php include './inc/locations/stores/mississaugasouth.php'; ?>       
     </div>
-    <!-- END div id="mississaugasouth-location" --> 
+    <!-/- END div id="mississaugasouth-location" --> 
     
     <!-- Start of div id="montrealdt-location" -->
     <div id="montrealdt-location" class="menu_item">
@@ -151,12 +151,12 @@
     </div>
     <!-- END div id="northyork-location" --> 
     
-    <!-- Start of div id="oakvilleeast-location" -->
+    <!-- Start of div id="oakvilleeast-location" -/->
     <div id="oakvilleeast-location" class="menu_item">
       <li class="locations-menu-item store-name" id="oakvilleeast">Oakville East/Mississauga West</li>
-             <?php include './inc/locations/stores/oakvilleeast.php'; ?>       
+             <  ?php include './inc/locations/stores/oakvilleeast.php'; ?>       
     </div>
-    <!-- END div id="oakvilleeast-location" --> 
+    <!-/- END div id="oakvilleeast-location" --> 
     
     <!-- Start of div id="oshawa-location" -->
     <div id="oshawa-location" class="menu_item">
