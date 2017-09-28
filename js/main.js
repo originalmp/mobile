@@ -184,15 +184,10 @@ function storelocationsClose() {
 }
 
 // Store Details opens Scroll Div to Top
-$('.store-name').click(function() {    
-    $("#show-all-stores").slideUp(1000);   
-//    $("#show-all-stores").slideUp(1000);    
-})
 
-
-
-// toggle store locations (show/ hide)
-
+$('.store-name').click(function() {
+	 $("#storeLocations").slideUp(50);  
+});
 
 
 // ajax-location
@@ -472,6 +467,7 @@ $('#whitby').click(function() {
 $('#sidemenu-close-area, #retunHome, #sidemenu_logo, #gps_icon, #closeStoreDetails').click(function() {
  $('#show-all-stores .menu_item').removeClass('deactivate-menuitem activate-menuitem');
  $('#storeLocations').removeClass('menuitem-active');
+
 })
 
 
