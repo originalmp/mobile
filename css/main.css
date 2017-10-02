@@ -3,16 +3,23 @@
 	font-weight: bold;
 	text-decoration: underline;
 }
+a {
+    text-decoration: none !important;
+}
+a.btn {
+    background: #f5f5f5;
+    width: 90px;
+    border: 1px solid #f0f8ff;
+}
 /*Page Style*/
 body {
 	font-family: "Lato", sans-serif;
-	transition: background-color 0.9s;
+	transition: background-color 0.5s;
 	margin: 0;
 	    overflow-y: auto;
-
 }
 #main {
-	transition: margin-left 0.9s;
+	transition: margin-left 0.5s;
 	width: 100vw !important;
 		width: 100%;
 
@@ -22,6 +29,13 @@ body {
 	overflow: hidden;
 	position: fixed;
 			z-index: 0 !important;
+}
+span.chevron {
+    float: right;
+}
+img.chevron-icon {
+    width: auto;
+    height: 15px;
 }
 /**************** Main Header ****************/
 
@@ -209,7 +223,7 @@ div#line {
 /*Side Menu*/
 .sidenav.active {
 	visibility: visible !important;
-	transition: 0.9s;
+	transition: 0.5s;
 }
 .sidenav {
     background-color: #005495;	
@@ -222,7 +236,7 @@ div#line {
 	top: 0;
 	left: 0;
 	overflow-x: hidden;
-	transition: 0.9s;
+	transition: 0.5s;
 	padding-top: 60px;
 	width: 0;
 	visibility: hidden;
@@ -288,7 +302,7 @@ div#line {
 .sidenav #main_navigation {
     width: 100vw !important;
 		width: 100%;
- transition:visibility 0.9s, opacity 0.9s;
+ transition:visibility 0.5s, opacity 0.5s;
 }
 /*Main Menu Navigation - Items */
 .sidenav #main_navigation a {
@@ -297,7 +311,7 @@ div#line {
 	font-size: 25px;
 	color: #f1f1f1;
 	display: block;
-	transition: 0.9s;
+	transition: 0.5s;
 	border-bottom: 1px solid rgba(153, 153, 153, 0.45);
 }
 .sidenav #main_navigation a:hover, .sidenav #main_navigation a:focus {
@@ -332,7 +346,7 @@ div#line {
 /* Account Area - Activated - Open Account Body to 100%*/
 .left-side-menu-active .myaccount  {
 	width: 100% !important;
-	transition: 0.9s;
+	transition: 0.5s;
 background-color: #f0f8ff !important;
 }
 .left-side-menu-active .myaccount #menu-bar-center {
@@ -343,15 +357,15 @@ width: 58.33333333%;
  	height: 100%;
 	height: 100vh !important;
 	background-color: #f0f8ff;
-	transition: 0.9s;
-  -webkit-transition: background-color 0.9s ease-out;
-  -moz-transition: background-color 0.9s ease-out;
-  -o-transition: background-color 0.9s ease-out;
-  transition: background-color 0.9s ease-out;
+	transition: 0.5s;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 .left-side-menu-active .myaccount #side-menu-top{
 	    width: 100% !important;
-		transition: 0.9s;
+		transition: 0.5s;
 
 	}
 
@@ -498,18 +512,18 @@ width: 58.33333333%;
 .sidenav.browseproducts {
 	width: 100% !important;
 	background-color: #013366;
-	transition: 0.9s;
-    -webkit-transition: background-color 0.9s ease-out;
-    -moz-transition: background-color 0.9s ease-out;
-    -o-transition: background-color 0.9s ease-out;
-    transition: background-color 0.9s ease-out;
+	transition: 0.5s;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
 	}
 	
 
 .left-side-menu-active .browseproducts #side-menu-top{
     width: 100%;
 	 width: 100vw !important;
-		transition: 0.9s;
+		transition: 0.5s;
 	}
 	
 .left-side-menu-active .browseproducts #menu-bar-center {
@@ -530,11 +544,11 @@ width: 58.33333333%;
 .sidenav.browseproducts #side-menu-top-left {
     text-align: center;
 	background-color: #013366;
-		transition: 0.9s;
-    -webkit-transition: background-color 0.9s ease-out;
-    -moz-transition: background-color 0.9s ease-out;
-    -o-transition: background-color 0.9s ease-out;
-    transition: background-color 0.9s ease-out;
+		transition: 0.5s;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
 }
 
 /* Browse All Products - Menu Area */	
@@ -775,6 +789,7 @@ div#allCategories_header.enable::after {
 {display: none !important;}
 /**************** LEFT-SIDE-PUSH-MENU - elements Disabled untill IT'S Activated  ****************/
 #left-side-push-menu .map-container,
+#left-side-push-menu #store-connections,
 #left-side-push-menu #storeLocations,
 #left-side-push-menu .store-location,
 #left-side-push-menu .deactivate-menuitem,
@@ -792,7 +807,8 @@ div#allCategories_header.enable::after {
 .left-side-menu-active .store-locations .activate-menuitem ul.store-location,
 .left-side-menu-active .store-locations .activate-menuitem #locations-nav,
 #left-side-push-menu .menuitem-active #Store-Details-Header,
-#left-side-push-menu .menuitem-active .activate-menuitem .map-container
+#left-side-push-menu .menuitem-active .activate-menuitem .map-container,
+#left-side-push-menu .menuitem-active .activate-menuitem #store-connections
 {display: block !important;}
 
 /**************** LEFT-SIDE-PUSH-MENU - Store Locations Area  ****************/
@@ -803,11 +819,11 @@ div#allCategories_header.enable::after {
  	height: 100%;
 	height: 100vh !important;
 	background-color: #f0f8ff;
-	transition: 0.9s;
-  -webkit-transition: background-color 0.9s ease-out;
-  -moz-transition: background-color 0.9s ease-out;
-  -o-transition: background-color 0.9s ease-out;
-  transition: background-color 0.9s ease-out;
+	transition: 0.5s;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 
 .left-side-menu-active .store-locations #menu-bar-center {
@@ -816,7 +832,7 @@ div#allCategories_header.enable::after {
 
 .left-side-menu-active .store-locations #side-menu-top{
 	    width: 100% !important;
-		transition: 0.9s;
+		transition: 0.5s;
 
 	}
 
@@ -850,9 +866,7 @@ div#allCategories_header.enable::after {
 }
 
 /* All Stores Navigation - Menu Items*/
-.left-side-menu-active .store-locations #locations-nav a {
-    font-size: 20px;
-}
+
 .left-side-menu-active .store-locations #locations-nav ul {
     list-style: none;
 }
@@ -928,13 +942,13 @@ div#allCategories_header.enable::after {
     text-transform: uppercase;
     font-weight: 700;
 }
+
 .left-side-menu-active .store-locations .activate-menuitem {
     margin-bottom: 50px;
 }
 .left-side-menu-active .store-locations .menuitem-active #locations-body {
 	margin-top: 20px;
 }
-
 
 .left-side-menu-active .store-locations .menu_item::after {
     content: "+";
@@ -956,27 +970,111 @@ div#allCategories_header.enable::after {
     position: absolute;
     margin-top: -30px;
 }
-
-/*store links */
-ul.store-location a.store-manager,
-ul.store-location a.store-email,
-ul.store-location a.email,
-ul.store-location li.store-hours,
-ul.store-location li.store-phone a,
-ul.store-location li.store-address a {
-    font-size: 12px !important;
-}
+/* Active Store Location*/
 .activate-menuitem ul.store-location {
      width: 95%;
+}
+/* Bottom Border */
+ul.store-location li {
+    border-bottom: 2px dotted rgba(153, 153, 153, 0.45);
+    line-height: 30px;
+}
+/*store links */
+.left-side-menu-active .store-locations a.store-manager,
+.left-side-menu-active .store-locations a.store-email,
+.left-side-menu-active .store-locations a.email,
+.left-side-menu-active .store-locations li.store-phone a {
+    font-size: 14px;
+}
+/* Store Hours Tile*/
+.left-side-menu-active .store-locations li.store-hours.title {
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+/* Store Address */
+.left-side-menu-active .store-locations li.store-address {
+    line-height: 25px !important;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/* Store Address - A Tag */
+.left-side-menu-active .store-locations li.store-address a {
+    text-transform: uppercase;
+}
+
+.left-side-menu-active .store-locations li.store-hours {
+    text-transform: uppercase;
+	    font-size: 15px;
+}
+
+
+.left-side-menu-active .store-locations li.store-hours.saturdays,
+.left-side-menu-active .store-locations li.store-hours.weekdays,
+.left-side-menu-active .store-locations li.store-image {
+    border: none !important;
 }
 .activate-menuitem li.store-image img {
     height: auto;
     max-width: 400px;
-	width:100%;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.left-side-menu-active .store-locations img.email-icon,
+.left-side-menu-active .store-locations img.phone-icon {
+    width: auto;
+    height: 30px;
+    padding-right: 15px;
+}
+.left-side-menu-active .store-locations li.store-hours.sundays {
+    padding-bottom: 10px;
+}
+.left-side-menu-active .store-locations li.store-service-centre,
+.left-side-menu-active .store-locations li.store-phone{
+    line-height: 40px !important;
+    margin-bottom: 10px;
+		}
+
+.left-side-menu-active .store-locations .map-container {
+    margin-top: 15px;
 }
 .left-side-menu-active .store-locations #map {
     height: 300px;
     width: 300px;
     margin-bottom: -75px;
 }
+.left-side-menu-active #store-connections ul {
+    width: 100%;
+    margin-left: -15px !important;
+}
+.left-side-menu-active #store-connections li {
+    display: inline;
+    padding: 0px 5px;
+}
+.left-side-menu-active #store-connections {
+    position: fixed;
+    bottom: 0;
+    background: #005495;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    left: 0;
+    color: #FFF;
+}
+.left-side-menu-active #store-connections a {
+    font-size: 15px;
+}    
+
+
+.left-side-menu-active .menu_item.activate-menuitem .map-container,
+.left-side-menu-active .menu_item.activate-menuitem ul.store-location
+{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+/* ********************************************************** */
+/*Map Page*/
+ #map {
+        height: 300px;
+        width: 300px;
+       }
 /* ********************************************************** */

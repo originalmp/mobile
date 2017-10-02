@@ -4,23 +4,33 @@
 
 
  <ul class="store-location">
-        <li class="store-image"><img src="http://m.canadacomputers.com/sty/img/location/mississauga.jpg" alt="Canada Computers and Electronics"></li>
+        <li class="store-image"><img src="./images/locations/mississauga.jpg" alt="Canada Computers and Electronics"></li>
 
   <li class="store-address"><a href="https://maps.apple.com/?q=720%20Burnhamthorpe%20Rd.%20W,%20Unit%2029%E2%80%9330,%20Mississauga,%20Ontario%20L5C%203G1,%20Canada" target="_blank">720 Burnhamthorpe Rd. W, Unit 29–30, Mississauga, Ontario L5C 3G1, Canada</a></li>
-  <li class="store-phone">T: <a href="tel:905-232-0551">905-232-0551</a></li>
+  
+  <li class="store-hours title">Store &amp; Service Centre Hours:</li>
+  <li class="store-hours weekdays">M – F : 10am – 8pm</li>
+  <li class="store-hours saturdays">Saturday : 10am – 7pm</li>
+  <li class="store-hours sundays">Sunday : 11am – 6pm</li>
+  
+  <a href="tel:905-232-0551"><li class="store-phone"><img class="phone-icon" src="./images/phone.png"> 905-232-0551<span class="chevron"><img class="chevron-icon" src="./images/chevron.png"></span></li></a>
 
-  <a class="email" href="mailto:mississauga@canadacomputers.com">
+  <!-- a class="email" href="mailto:mississauga@canadacomputers.com">
   <li>E: mississauga@canadacomputers.com</li>
-  </a>
-  <li class="inquiries">For all inquiries regarding service centre and system build please email:</li>
+  </a -->
+  <li class="inquiries">For inquiries regarding Service or System build contact our Service Centre:</li>
   <a class="email" href="mailto:mississaugaservice@canadacomputers.com">
-  <li>E: mississaugaservice@canadacomputers.com</li>
+        <li class="store-service-centre"><img class="email-icon" src="./images/email.png"> Contact Service Centre<span class="chevron"><img class="chevron-icon" src="./images/chevron.png"></span></li>
   </a>
-  <li class="store-hours">Store &amp; Service Centre Hours:</li>
-  <li class="store-hours">M – F : 10am – 8pm</li>
-  <li class="store-hours">Saturday : 10am – 7pm</li>
-  <li class="store-hours">Sunday : 11am – 6pm</li>
+
 </ul>
 
  <div class="map-container"><embed style="width: 320px;height: 340px;" src="./inc/locations/stores/mississauga-map.html"></embed></div>
-<!-- END of /inc/locations/stores/mississauga.php  -->
+<div id="store-connections">
+  <ul>
+    <li><a class="btn" href="tel:905-232-0551">Call</a></li>
+    <li><a class="btn" href="mailto:mississauga@canadacomputers.com">Email</a></li>
+    <li><a class="btn" href="https://maps.apple.com/?q=720%20Burnhamthorpe%20Rd.%20W,%20Unit%2029%E2%80%9330,%20Mississauga,%20Ontario%20L5C%203G1,%20Canada">Directions</a></li>
+  </ul>
+</div>
+<!-- END /inc/locations/stores/mississauga.php  -->

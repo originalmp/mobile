@@ -5,6 +5,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
 <link href="./css/main.css" rel="stylesheet" type="text/css">
+<link href="./css/media.css" rel="stylesheet" type="text/css">
 <link href="./css/bootstrap.min.css" rel="stylesheet">
 <link href="./css/animations.css" rel="stylesheet">
 <script src="./js/jquery.min.js"></script>

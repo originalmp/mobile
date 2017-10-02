@@ -1,4 +1,11 @@
 <!-- START of /inc/locations/stores/oakvilleeast.php  -->
 
  <div class="map-container"><embed style="width: 320px;height: 340px;" src="./inc/locations/stores/oakvilleeast-map.html"></embed></div>
-<!-- END of /inc/locations/stores/oakvilleeast.php  -->
+<div id="store-connections">
+  <ul>
+    <li><a class="btn" href="#">Call</a></li>
+    <li><a class="btn" href="#">Email</a></li>
+    <li><a class="btn" href="#">Directions</a></li>
+  </ul>
+</div>
+<!-- END /inc/locations/stores/oakvilleeast.php  -->

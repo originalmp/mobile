@@ -1,0 +1,36 @@
+/*Responsive Page Styling*/
+
+/* *********************** iPhone 4 and Smaller *********************************** */
+@media (max-device-width: 320px) and (min-device-width: 0px) {
+a.btn {
+    width: 74px !important;
+}
+	
+/*Store Locations - Store Detals Page  */	
+.left-side-menu-active #store-connections a {
+    font-size: 10px !important;
+    text-transform: capitalize;
+}
+
+.left-side-menu-active .store-locations li.store-hours.title {
+    margin-bottom: 10px;
+}
+.left-side-menu-active .store-locations li.store-hours {
+    font-size: 13px !important;
+}
+.left-side-menu-active .store-locations li {
+    line-height: 20px !important;
+}
+
+/*Store Locations - MAP Section  */	
+.left-side-menu-active .store-locations .map-container embed,
+#map {
+    height: 250px !important;
+    width: 250px !important;
+}
+
+
+
+/* End of @media only screen and (max-device-width: 320px) and (min-device-width: 0px) */	
+}
+/* *********************** CSS END *********************************** */
