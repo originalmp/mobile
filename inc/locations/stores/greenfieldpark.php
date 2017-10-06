@@ -25,12 +25,12 @@
 
 
 
- <div class="map-container"><embed style="width: 320px;height: 340px;" src="./inc/locations/stores/greenfieldpark-map.html"></embed></div>
+ <div class="map-container"><embed src="./inc/locations/stores/greenfieldpark-map.html"></embed></div>
 <div id="store-connections">
-  <ul>
-    <li><a class="btn" href="tel:450-693-0272">Call</a></li>
-    <li><a class="btn" href="mailto:greenfield@ordinateurscanada.com">Email</a></li>
-    <li><a class="btn" href="https://maps.apple.com/?q=3680%20Boulevard%20Taschereau,%20Greenfield%20Park,%20QC%20J4V%202H8">Directions</a></li>
+  <ul id="bottom-menu" class="row">
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="tel:450-693-0272">Call</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="mailto:greenfield@ordinateurscanada.com">Email</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="https://maps.apple.com/?q=3680%20Boulevard%20Taschereau,%20Greenfield%20Park,%20QC%20J4V%202H8">Directions</a></li>
   </ul>
 </div>
 <!-- END /inc/locations/stores/greenfieldpark.php  -->

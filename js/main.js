@@ -4,34 +4,26 @@
 // Side Menu Open
 function openNav() {
     document.body.classList.add("left-side-menu-active");
-	document.body.style.overflowX = "hidden";
-    document.getElementById("main").style.marginLeft = "80%";
+//	document.body.style.overflowX = "hidden";
+//  document.getElementById("header-bar").style.marginLeft = "80%";
     document.getElementById("main").classList.add("disabled");
-    document.getElementById("left-side-push-menu").style.width = "80%";
     document.getElementById("left-side-push-menu").classList.add("active");
-    document.getElementById("sideNavTop").style.display = "block";	
     document.getElementById("main_navigation").style.display = "block";
     document.getElementById("body-content").classList.add("disable");
-    document.getElementById("tab-bar-left").classList.add("active");
-	
-
+    document.getElementById("tab-bar-left").classList.add("active");	
 }
+
 // Side Menu Close
 function closeNav() {
     document.body.classList.remove("left-side-menu-active");
-	document.body.style.overflowX = "auto";	
-    document.getElementById("main").style.marginLeft= "0";
+//	document.body.style.overflowX = "auto";	
+// document.getElementById("header-bar").style.marginLeft= "0";
 	document.getElementById("main").classList.remove("disabled");
     document.getElementById("left-side-push-menu").classList.remove("active");
-    document.getElementById("left-side-push-menu").style.width = "0";
-    document.getElementById("sideNavTop").style.display = "none";	
     document.getElementById("main_navigation").style.display = "none";
     document.getElementById("body-content").classList.remove("disable");
 	document.getElementById("tab-bar-left").classList.remove("active");
 }
-
-
-
 
 // Home Page Popups
 // Shopping Cart Popout

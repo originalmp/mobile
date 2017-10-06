@@ -5,7 +5,7 @@
     <li class="store-address"><a href="https://maps.apple.com/?q=350%20Princess%20St,%20Kingston,%20ON%20K7L%201B6%20Canada" target="_blank">350 Princess Street, Kingston,Ontario K7L 1B6, Canada</a></li>
     
   <li class="store-hours title">Store &amp; Service Centre Hours:</li>
-  <li class="store-hours weekdays">M – F : 9:30am – 7:30pm</li>
+  <li class="store-hours weekdays">Mon-Fri : 9:30am – 7:30pm</li>
   <li class="store-hours saturdays">Saturday : 10am – 7pm</li>
   <li class="store-hours sundays">Sunday : 11am – 6pm</li>  
     
@@ -23,12 +23,12 @@
 </ul>
 
 
- <div class="map-container"><embed style="width: 320px;height: 340px;" src="./inc/locations/stores/kingston-map.html"></embed></div>
+ <div class="map-container"><embed src="./inc/locations/stores/kingston-map.html"></embed></div>
 <div id="store-connections">
-  <ul>
-    <li><a class="btn" href="tel:613-542-8467">Call</a></li>
-    <li><a class="btn" href="mailto:kingston@canadacomputers.com">Email</a></li>
-    <li><a class="btn" href="https://maps.apple.com/?q=350%20Princess%20St,%20Kingston,%20ON%20K7L%201B6%20Canada">Directions</a></li>
+  <ul id="bottom-menu" class="row">
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="tel:613-542-8467">Call</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="mailto:kingston@canadacomputers.com">Email</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="https://maps.apple.com/?q=350%20Princess%20St,%20Kingston,%20ON%20K7L%201B6%20Canada">Directions</a></li>
   </ul>
 </div>
 <!-- END /inc/locations/stores/kingston.php  -->

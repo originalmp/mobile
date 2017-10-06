@@ -7,7 +7,7 @@
   <li class="store-address"><a href="https://maps.apple.com/?q=101%20James%20Snow%20Parkway%20N.,%20Units%201-7Milton,%20ON%20L9T%200R3,%20Canada" target="_blank">101 James Snow Parkway North, Unit 1-7 Milton, ON L9E 0H4, Canada</a></li>
   
     <li class="store-hours title">Store &amp; Service Centre Hours:</li>
-  <li class="store-hours weekdays">M – F : 10am – 8pm</li>
+  <li class="store-hours weekdays">Mon-Fri : 10am – 8pm</li>
   <li class="store-hours saturdays">Saturday : 10am – 7pm</li>
   <li class="store-hours sundays">Sunday : 11am – 6pm</li>
 <a href="tel:289-851-7945"><li class="store-phone"><img class="phone-icon" src="./images/phone.png">289-851-7945<span class="chevron"><img class="chevron-icon" src="./images/chevron.png"></span></li></a>
@@ -21,12 +21,12 @@
 
 </ul>
 
- <div class="map-container"><embed style="width: 320px;height: 340px;" src="./inc/locations/stores/milton-map.html"></embed></div>
+ <div class="map-container"><embed src="./inc/locations/stores/milton-map.html"></embed></div>
 <div id="store-connections">
-  <ul>
-    <li><a class="btn" href="tel:289-851-7945">Call</a></li>
-    <li><a class="btn" href="mailto:milton@canadacomputers.com">Email</a></li>
-    <li><a class="btn" href="https://maps.apple.com/?q=101%20James%20Snow%20Parkway%20N.,%20Units%201-7Milton,%20ON%20L9T%200R3,%20Canada">Directions</a></li>
+  <ul id="bottom-menu" class="row">
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="tel:289-851-7945">Call</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="mailto:milton@canadacomputers.com">Email</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="https://maps.apple.com/?q=101%20James%20Snow%20Parkway%20N.,%20Units%201-7Milton,%20ON%20L9T%200R3,%20Canada">Directions</a></li>
   </ul>
 </div>
 <!-- END /inc/locations/stores/milton.php  -->

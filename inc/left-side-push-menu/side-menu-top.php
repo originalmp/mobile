@@ -1,5 +1,5 @@
 <!-- Start of sideNavTop.php  -->
-<div class="row" id="sideNavTop" style="display:none;">
+<div class="row" id="sideNavTop">
 <!-- COL 1 LEFT -->
 <div id="side-menu-top-left" class="col-xs-2 col-sm-2">
     <?php include './inc/left-side-push-menu/side-menu-top-left.php'; ?>

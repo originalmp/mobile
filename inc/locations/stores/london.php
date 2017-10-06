@@ -6,7 +6,7 @@
   <li class="store-address"><a href="https://maps.apple.com/?q=1045%20Wellington%20Rd,%20London,%20ON%20N6E%201W4%20Canada" target="_blank">1045 Wellington Road, London, Ontario N6E 1W4, Canada</a></li>
   
   <li class="store-hours title">Store &amp; Service Centre Hours:</li>
-  <li class="store-hours weekdays">M – F : 10am – 7:30pm</li>
+  <li class="store-hours weekdays">Mon-Fri : 10am – 7:30pm</li>
   <li class="store-hours saturdays">Saturday : 10am – 6pm</li>
   <li class="store-hours sundays">Sunday : 11am – 6pm</li>
   
@@ -25,12 +25,12 @@
 </ul>
 
 
- <div class="map-container"><embed style="width: 320px;height: 340px;" src="./inc/locations/stores/london-map.html"></embed></div>
+ <div class="map-container"><embed src="./inc/locations/stores/london-map.html"></embed></div>
 <div id="store-connections">
-  <ul>
-    <li><a class="btn" href="tel:226-213-4688">Call</a></li>
-    <li><a class="btn" href="mailto:london@canadacomputers.com">Email</a></li>
-    <li><a class="btn" href="https://maps.apple.com/?q=1045%20Wellington%20Rd,%20London,%20ON%20N6E%201W4%20Canada">Directions</a></li>
+  <ul id="bottom-menu" class="row">
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="tel:226-213-4688">Call</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="mailto:london@canadacomputers.com">Email</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="https://maps.apple.com/?q=1045%20Wellington%20Rd,%20London,%20ON%20N6E%201W4%20Canada">Directions</a></li>
   </ul>
 </div>
 <!-- END /inc/locations/stores/london.php  -->

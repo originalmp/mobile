@@ -9,7 +9,7 @@
   <li class="store-address"><a href="https://maps.apple.com/?q=720%20Burnhamthorpe%20Rd.%20W,%20Unit%2029%E2%80%9330,%20Mississauga,%20Ontario%20L5C%203G1,%20Canada" target="_blank">720 Burnhamthorpe Rd. W, Unit 29–30, Mississauga, Ontario L5C 3G1, Canada</a></li>
   
   <li class="store-hours title">Store &amp; Service Centre Hours:</li>
-  <li class="store-hours weekdays">M – F : 10am – 8pm</li>
+  <li class="store-hours weekdays">Mon-Fri : 10am – 8pm</li>
   <li class="store-hours saturdays">Saturday : 10am – 7pm</li>
   <li class="store-hours sundays">Sunday : 11am – 6pm</li>
   
@@ -25,12 +25,12 @@
 
 </ul>
 
- <div class="map-container"><embed style="width: 320px;height: 340px;" src="./inc/locations/stores/mississauga-map.html"></embed></div>
+ <div class="map-container"><embed src="./inc/locations/stores/mississauga-map.html"></embed></div>
 <div id="store-connections">
-  <ul>
-    <li><a class="btn" href="tel:905-232-0551">Call</a></li>
-    <li><a class="btn" href="mailto:mississauga@canadacomputers.com">Email</a></li>
-    <li><a class="btn" href="https://maps.apple.com/?q=720%20Burnhamthorpe%20Rd.%20W,%20Unit%2029%E2%80%9330,%20Mississauga,%20Ontario%20L5C%203G1,%20Canada">Directions</a></li>
+  <ul id="bottom-menu" class="row">
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="tel:905-232-0551">Call</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="mailto:mississauga@canadacomputers.com">Email</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="https://maps.apple.com/?q=720%20Burnhamthorpe%20Rd.%20W,%20Unit%2029%E2%80%9330,%20Mississauga,%20Ontario%20L5C%203G1,%20Canada">Directions</a></li>
   </ul>
 </div>
 <!-- END /inc/locations/stores/mississauga.php  -->

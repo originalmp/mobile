@@ -4,39 +4,39 @@
 	text-decoration: underline;
 }
 a {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 a.btn {
-    background: #f5f5f5;
-    width: 90px;
-    border: 1px solid #f0f8ff;
+	background: #f5f5f5;
+	width: 90px;
+	border: 1px solid #f0f8ff;
+}
+span.chevron {
+	float: right;
+}
+img.chevron-icon {
+	width: auto;
+	height: 15px;
 }
 /*Page Style*/
 body {
 	font-family: "Lato", sans-serif;
 	transition: background-color 0.5s;
 	margin: 0;
-	    overflow-y: auto;
+	overflow-y: auto;
 }
 #main {
 	transition: margin-left 0.5s;
 	width: 100vw !important;
-		width: 100%;
-
+	width: 100%;
 }
 #main.disabled {
 	float: left;
 	overflow: hidden;
 	position: fixed;
-			z-index: 0 !important;
+	z-index: 0 !important;
 }
-span.chevron {
-    float: right;
-}
-img.chevron-icon {
-    width: auto;
-    height: 15px;
-}
+
 /**************** Main Header ****************/
 
 /* file: inc/ */
@@ -47,6 +47,9 @@ img.chevron-icon {
 	height: 60px;
 	line-height: 55px;
 	position: relative;
+}
+#main.disabled #header-bar {
+	margin-left: 80%;
 }
 #tab-bar-center {
 	text-align: center;
@@ -61,8 +64,8 @@ img.chevron-icon {
 	float: left;
 }
 div#header-left-top-right {
-    position: absolute;
-    margin-left: 20px;
+	position: absolute;
+	margin-left: 20px;
 }
 #tab-bar-right {
 	padding: 0 !important;
@@ -72,7 +75,7 @@ div#header-left-top-right {
 	display: inline-flex;
 }
 .header-bar-left {
-    display: inline-block;
+	display: inline-block;
 }
 /* Top Menu Icons*/
 div#line {
@@ -89,14 +92,13 @@ div#line {
 #online-cart {
 	width: 52px;
 	text-align: center;
-	    height: 60px;
+	height: 60px;
 }
 #locate-product {
 	width: 52px;
 	text-align: center;
-    height: 60px;
+	height: 60px;
 }
-
 /*Shoping Cart Popup*/
 #shopping-cart {
 	display: inline;
@@ -131,7 +133,6 @@ div#line {
 .cart-icon.active {
 	background: #013366;
 }
-
 /*************** *Product Search* **************/
 /* Search Area - Header - index.php */
 #ProductSearch {
@@ -143,11 +144,10 @@ div#line {
 	border-bottom: 1px solid #d9d9d9;
 	-webkit-box-shadow: 0 0 4px 1px rgba(0,0,0,.18);
 	box-shadow: 0 0 4px 1px rgba(0,0,0,.18);
-    width: 100vw !important;
-	    width: 100%;
-    padding: 15px;
+	width: 100vw !important;
+	width: 100%;
+	padding: 15px;
 }
-
 /* Search outer DIV - Active, index.php */
 #ProductSearch.active {
 	transform: translateY(0);
@@ -156,91 +156,82 @@ div#line {
 .search-icon.active {
 	background: #013366;
 }
-
 #ProductSearch #search-area {
-    margin-left: 0px;
-    margin-right: 0px;
-    background: #FFF;
-    border: 2px solid #ffffff;
+	margin-left: 0px;
+	margin-right: 0px;
+	background: #FFF;
+	border: 2px solid #ffffff;
 }
-
 /* Search Field, inc/search.php */
 #ProductSearch #header-search-field {
-    padding: 0;
-    width: 97.6%;
+	padding: 0;
+	width: 97.6%;
 }
-
 /* Product Search - input, inc/search.php */
 #ProductSearch input#FindProduct {
 	width: 100%;
 	height: 44px;
 	border: none;
 }
-
 #ProductSearch #header-search-button {
-    padding: 0;
-    float: right;
-    width: 2.4%;
+	padding: 0;
+	float: right;
+	width: 2.4%;
 }
-
 #ProductSearch .site-search-submit {
-    text-align: center;
-    border: none;
-    border-left: 1px solid #d9d9d9;
-    background: #FFDD00;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
- line-height: 44px;
-    padding: 0 11px;
-    width: auto;
-    max-width: 95px;
-    white-space: nowrap;
-    vertical-align: middle;
+	text-align: center;
+	border: none;
+	border-left: 1px solid #d9d9d9;
+	background: #FFDD00;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 44px;
+	padding: 0 11px;
+	width: auto;
+	max-width: 95px;
+	white-space: nowrap;
+	vertical-align: middle;
 	font-family: "Lato", sans-serif;
-    font-weight: 700;
-    float: right;
+	font-weight: 700;
+	float: right;
 }
-
-/**************** Elements Disabled ****************/
-#closemenu
-{display: none;}
 /**************** Elements Disabled when LEFT-SIDE-PUSH-MENU is Activated  ****************/
-.left-side-menu-active #close-sidemenu,
-.left-side-menu-active #openmenu,
-.left-side-menu-active #main .cc-logo
-{display: none;}
-/**************** Elements Enabled when LEFT-SIDE-PUSH-MENU is Activated  ****************/
-.left-side-menu-active #closemenu{
-	display: block;
-}
 
-.left-side-menu-active #tab-bar-left {
-    height: 60px;
+.left-side-menu-active #main .cc-logo, .left-side-menu-active #close-sidemenu, .left-side-menu-active #openmenu, #left-side-push-menu, #sideNavTop, #closemenu,
+#main.disabled #tab-bar-right, #main.disabled #tab-bar-center {
+	display: none;
+}
+/**************** Elements Enabled when LEFT-SIDE-PUSH-MENU is Activated  ****************/
+.left-side-menu-active #sideNavTop, .left-side-menu-active #closemenu, #left-side-push-menu.active {
+	display: block !important;
 }
 /**************** LEFT-SIDE-PUSH-MENU ****************/
 
+
+
 /*Side Menu*/
-.sidenav.active {
+#left-side-push-menu {
+	transition: 0.5s;
+	width: 0;
+	visibility: hidden;
+}
+.left-side-menu-active #left-side-push-menu.active {
 	visibility: visible !important;
 	transition: 0.5s;
+	width: 80%;
 }
-.sidenav {
-    background-color: #005495;	
-	}
-.sidenav {
-	height: 100%;
- 	position: fixed;
-/*	position: absolute; */
+
+.left-side-menu-active #left-side-push-menu {
+	background-color: #005495;
 	z-index: 3;
 	top: 0;
 	left: 0;
-	overflow-x: hidden;
-	transition: 0.5s;
+	height: 100%;
+	position: fixed;
+	overflow-y: auto;
 	padding-top: 60px;
-	width: 0;
-	visibility: hidden;
-    overflow-y: auto;
+	overflow-x: hidden;
 }
 /*sidenav top bar*/
 .sidenav #side-menu-top {
@@ -251,46 +242,54 @@ div#line {
 	width: 80%;
 	line-height: 60px;
 }
-
-.left-side-menu-active  #side-menu-top{
-	  background: #005495;
-	  }
-	  
+.left-side-menu-active #side-menu-top {
+	background: #005495;
+}
 .left-side-menu-active #menu-bar-center {
 	text-align: center;
 	vertical-align: middle;
 	width: 66.66666667%;
 }
+.left-side-menu-active #tab-bar-left {
+	height: 60px;
+}
 /* LEFT-SIDE-PUSH-MENU - Right Icons */	
-.left-side-menu-active #side-menu-top-right{
-	    width: 16.66666667% !important;
-		float:right;
-	}
+.left-side-menu-active #side-menu-top-right {
+	width: 16.66666667% !important;
+	float: right;
+}
 #gps_icon {
-    width: auto;
-    height: 25px;
-}	
-
+	width: auto;
+	height: 25px;
+}
 /* sidenav top bar (Right)*/
 .side-menu-right {
-    display: inline-block;
-    vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
 }
 /* sidenav top bar (Right) - Exit Icons*/
 #side-menu-right-exit {
-    float: right;
+	float: right;
 }
 /* sidenav top bar (Right) - User Icons*/
 #side-menu-right-icons {
- float: right;
+	float: right;
 }
-
-#retunHome  {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
-
+#retunHome {
+	animation: animatezoom 0.6s
+}
+@keyframes animatezoom {
+from {
+transform:scale(0)
+}
+to {
+	transform: scale(1)
+}
+}
 /* sidenav top bar (Left)- My Account Icon*/
 .sidenav #myaccount_icon {
 	width: auto;
-    height: 35px;
+	height: 35px;
 }
 /*sidenav top bar - logo*/
 .sidenav #side-menu-top .cc-logo {
@@ -300,9 +299,9 @@ div#line {
 }
 /*Main Menu Navigation*/
 .sidenav #main_navigation {
-    width: 100vw !important;
-		width: 100%;
- transition:visibility 0.5s, opacity 0.5s;
+	width: 100vw !important;
+	width: 100%;
+	transition: visibility 0.5s, opacity 0.5s;
 }
 /*Main Menu Navigation - Items */
 .sidenav #main_navigation a {
@@ -318,194 +317,159 @@ div#line {
 	color: #f1f1f1;
 	color: #fddb01;
 }
-
-
 /**************** LEFT-SIDE-PUSH-MENU - Elements Disabled when My Account is Activated  ****************/
-.sidenav #sidemenu-close-area,
-.sidenav #myaccount,
-.sidenav.myaccount #sidemenu-open-myaccount,
-.sidenav.myaccount #closemenu,
-.sidenav.myaccount #main_navigation,
-.left-side-menu-active .myaccount #close-sidemenu  {
+.sidenav #sidemenu-close-area, .sidenav #myaccount, .sidenav.myaccount #sidemenu-open-myaccount, .sidenav.myaccount #closemenu, .sidenav.myaccount #main_navigation, .left-side-menu-active .myaccount #close-sidemenu {
 	display: none !important;
 }
 /*********************************************************** */
 
 
 /**************** LEFT-SIDE-PUSH-MENU - Elements Enabled when My Account is Activated  ****************/
-.left-side-menu-active .myaccount #side-menu-right-exit,
-.left-side-menu-active .myaccount #sidemenu-close-area,
-.left-side-menu-active .myaccount #sidemenu-right-myaccount-home-icon,
-.left-side-menu-active .myaccount #retunHome,
-.left-side-menu-active .myaccount #myaccount{	
+.left-side-menu-active .myaccount #side-menu-right-exit, .left-side-menu-active .myaccount #sidemenu-close-area, .left-side-menu-active .myaccount #sidemenu-right-myaccount-home-icon, .left-side-menu-active .myaccount #retunHome, .left-side-menu-active .myaccount #myaccount {
 	display: block !important;
 }
-
 /**************** LEFT-SIDE-PUSH-MENU - My Account Area  ****************/
 
 /* Account Area - Activated - Open Account Body to 100%*/
-.left-side-menu-active .myaccount  {
+.left-side-menu-active .myaccount {
 	width: 100% !important;
 	transition: 0.5s;
-background-color: #f0f8ff !important;
+	background-color: #f0f8ff !important;
 }
 .left-side-menu-active .myaccount #menu-bar-center {
-width: 58.33333333%;
+	width: 58.33333333%;
 }
 .left-side-menu-active .myaccount #myaccount {
 	width: 100% !important;
- 	height: 100%;
+	height: 100%;
 	height: 100vh !important;
 	background-color: #f0f8ff;
 	transition: 0.5s;
-  -webkit-transition: background-color 0.5s ease-out;
-  -moz-transition: background-color 0.5s ease-out;
-  -o-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
 }
-.left-side-menu-active .myaccount #side-menu-top{
-	    width: 100% !important;
-		transition: 0.5s;
-
-	}
-
+.left-side-menu-active .myaccount #side-menu-top {
+	width: 100% !important;
+	transition: 0.5s;
+}
 .left-side-menu-active .myaccount #side-menu-top-left {
-    text-align: center;
+	text-align: center;
 	background-color: #f0f8ff;
 }
 .left-side-menu-active .myaccount #side-menu-top-right {
-	    width: 25% !important;
-		}
-
-.left-side-menu-active .myaccount #side-menu-right-icons {
-    float: left !important;
-
+	width: 25% !important;
 }
-
-
+.left-side-menu-active .myaccount #side-menu-right-icons {
+	float: left !important;
+}
 /* Account Area - Signin / Login Area Hight, inc/accountAccess.php */
 #myaccount #membership-signin {
 	height: 320px;
 }
 /* Account Area - Signup / Signup form Hight, inc/accountAccess.php */
 #myaccount #membership-signup {
-    height: 345px;
+	height: 345px;
 }
-
-
 /* My Account - Banner Area, inc/accountAccess.php  */
 #myaccount #members-advertising #header-banner {
-    overflow: hidden;
-    padding: 0;
+	overflow: hidden;
+	padding: 0;
 }
 /* My Account - Header Advertising - Image, inc/accountAccess.php  */
 #myaccount #members-advertising #header-banner .banner {
-    width: 130%;
+	width: 130%;
 }
 /* My Account - Header Advertising bottom Space, inc/accountAccess.php  */
 #myaccount #members-advertising {
-    padding: 10px;
+	padding: 10px;
 }
 /* My Account - Members Form Area, inc/accountAccess.php  */
 #myaccount form#login-form {
-    -ms-border-radius: 0;
-    -webkit-border-radius: 0;
-    -ms-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    background: #fff;
-    border-radius: 0;
-    border: 0;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    display: block;
-    margin: 0 10px 10px 10px;
-    overflow: hidden;
-    position: relative;
-    padding: 10px;
-    z-index: 1;
+	-ms-border-radius: 0;
+	-webkit-border-radius: 0;
+	-ms-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	background: #fff;
+	border-radius: 0;
+	border: 0;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	display: block;
+	margin: 0 10px 10px 10px;
+	overflow: hidden;
+	position: relative;
+	padding: 10px;
+	z-index: 1;
 }
-
 /* My Account - Form Tabs, inc/accountAccess.php */
 #myaccount ul#membership-login-tabs {
-    overflow: hidden;
-    padding: 0 10px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-   list-style-type: none;
+	overflow: hidden;
+	padding: 0 10px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	list-style-type: none;
 }
 /* , inc/accountAccess.php */
 #myaccount li.tab-item {
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 14px;
-    line-height: 16px;
-    margin: 0;
-    float: left;
-    position: relative;
-    top: 1px;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.25);
-    text-decoration: none;
-    width: 50%;
-    color: #07c;
-    font-weight: bold;
-    padding: 15px 10px 16px 10px;
-    z-index: 1;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 16px;
+	margin: 0;
+	float: left;
+	position: relative;
+	top: 1px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+	text-decoration: none;
+	width: 50%;
+	color: #07c;
+	font-weight: bold;
+	padding: 15px 10px 16px 10px;
+	z-index: 1;
 }
 /* , inc/accountAccess.php */
 #myaccount li.login-tab.active-tab-item {
-    background: #fff;
-    color: #000 !important;
-    font-weight: bold;
-    padding: 15px 10px 16px 10px;
-    position: relative;
-    z-index: 1;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	background: #fff;
+	color: #000 !important;
+	font-weight: bold;
+	padding: 15px 10px 16px 10px;
+	position: relative;
+	z-index: 1;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 /* My Account - Terms and Conditions, inc/accountAccess.php */
 #myaccount #terms-conditions {
-    text-align: center;
-    margin: 10px;
-    padding: 8px 5px;
-    border-radius: 3px;
-    line-height: 16px;
-    text-decoration: none !important;
-    font-size: 10px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+	text-align: center;
+	margin: 10px;
+	padding: 8px 5px;
+	border-radius: 3px;
+	line-height: 16px;
+	text-decoration: none !important;
+	font-size: 10px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-
 /* , inc/signup.php */
 /*, inc/signin.php */
 #myaccount .account-form-group {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
-
-
-
 /**************** LEFT-SIDE-PUSH-MENU - Elements Disabled when Browse Products is Activated  ****************/
 
-.sidenav #browse-all-categories,
-.sidenav #browse-all-categories .submenu,
-.sidenav #sidemenu-close-ShopByProducts,
-.sidenav.browseproducts #closemenu,
-.sidenav.browseproducts #sidemenu-open-myaccount,
-.sidenav.browseproducts #main_navigation{
-	    display: none !important;
-	}
+.sidenav #browse-all-categories, .sidenav #browse-all-categories .submenu, .sidenav #sidemenu-close-ShopByProducts, .sidenav.browseproducts #closemenu, .sidenav.browseproducts #sidemenu-open-myaccount, .sidenav.browseproducts #main_navigation {
+	display: none !important;
+}
 /**************** LEFT-SIDE-PUSH-MENU - Elements Disabled when Browse Products is Activated  ****************/
-.sidenav.browseproducts #browse-all-categories .submenu,
-.sidenav.browseproducts #retunHome,
-.sidenav.browseproducts #browse-all-categories,
-.sidenav.browseproducts #sidemenu-close-ShopByProducts,
-.sidenav.browseproducts #retunHome{
-	    display: block !important;
-	}
+.sidenav.browseproducts #browse-all-categories .submenu, .sidenav.browseproducts #retunHome, .sidenav.browseproducts #browse-all-categories, .sidenav.browseproducts #sidemenu-close-ShopByProducts, .sidenav.browseproducts #retunHome {
+	display: block !important;
+}
 /**************** LEFT-SIDE-PUSH-MENU - Browse All Products * ************** */
 
 /* Browse All Products - Open LEFT-SIDE-PUSH-MENU body */
@@ -513,568 +477,504 @@ width: 58.33333333%;
 	width: 100% !important;
 	background-color: #013366;
 	transition: 0.5s;
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
-	}
-	
-
-.left-side-menu-active .browseproducts #side-menu-top{
-    width: 100%;
-	 width: 100vw !important;
-		transition: 0.5s;
-	}
-	
-.left-side-menu-active .browseproducts #menu-bar-center {
-width: 58.33333333%;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
 }
-
+.left-side-menu-active .browseproducts #side-menu-top {
+	width: 100%;
+	width: 100vw !important;
+	transition: 0.5s;
+}
+.left-side-menu-active .browseproducts #menu-bar-center {
+	width: 58.33333333%;
+}
 .left-side-menu-active .browseproducts #side-menu-top-right {
-	    width: 25% !important;
-		}	
+	width: 25% !important;
+}
 /* Browse All Products - GPS Icon */	
 .left-side-menu-active .browseproducts #side-menu-right-icons {
-    float: left !important;
+	float: left !important;
 }
-
-
-	
 /* Browse All Products - (Exit Area) LEFT-SIDE-PUSH-MENU Left Icon Area */	
 .sidenav.browseproducts #side-menu-top-left {
-    text-align: center;
+	text-align: center;
 	background-color: #013366;
-		transition: 0.5s;
-    -webkit-transition: background-color 0.5s ease-out;
-    -moz-transition: background-color 0.5s ease-out;
-    -o-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
+	transition: 0.5s;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
 }
-
 /* Browse All Products - Menu Area */	
 .sidenav.browseproducts #browse-all-categories #accordion {
-    width: 80%;
-    margin-left: 30px;
+	width: 80%;
+	margin-left: 30px;
 }
 .sidenav.browseproducts #browse-all-categories ul.side-nav {
-    margin-top: 5px;
+	margin-top: 5px;
 }
-
 .sidenav.browseproducts #browse-all-categories ul.submenu {
-    padding-top: 60px;
+	padding-top: 60px;
 }
 .sidenav.browseproducts #browse-all-categories ul.submenu li {
-    list-style: none;
+	list-style: none;
 }
-
-
 /* Browse All Products - Menu items Spacing */	
-#menu-item-1,
-#menu-item-2,
-#menu-item-3,
-#menu-item-4,
-#menu-item-5,
-#menu-item-6,
-#menu-item-7,
-#menu-item-8,
-#menu-item-9,
-#menu-item-10 {
-    margin-bottom: 4px;
-    border-bottom: 1px solid rgba(153, 153, 153, 0.45);
-    padding: 4px 0 7px 0px;
-	
+#menu-item-1, #menu-item-2, #menu-item-3, #menu-item-4, #menu-item-5, #menu-item-6, #menu-item-7, #menu-item-8, #menu-item-9, #menu-item-10 {
+	margin-bottom: 4px;
+	border-bottom: 1px solid rgba(153, 153, 153, 0.45);
+	padding: 4px 0 7px 0px;
 }
 #menu-item-10 {
-    border: none !important;
+	border: none !important;
 }
 /* Browse All Products - images before Menu items */	
 .sidenav.browseproducts #browse-all-categories .activate-item {
-    border: none !important;
+	border: none !important;
 }
-.sidenav.browseproducts #browse-all-categories .am-panel::before{
-    content: " ";
-    color: #FFF;
-    background-size: 100% 100%;
-    float: left;
-    left: 22px;
-	    position: absolute;
-	}
-	/* Browse All Products - Computer_Hardware ICON before Menu item */	
-.sidenav.browseproducts #browse-all-categories #menu-item-1::before{
+.sidenav.browseproducts #browse-all-categories .am-panel::before {
+	content: " ";
+	color: #FFF;
+	background-size: 100% 100%;
+	float: left;
+	left: 22px;
+	position: absolute;
+}
+/* Browse All Products - Computer_Hardware ICON before Menu item */	
+.sidenav.browseproducts #browse-all-categories #menu-item-1::before {
 	width: 23px;
-    height: 24px;
+	height: 24px;
 	background-image: url(../images/browse-all-categories/Computer_Hardware.png);
-
-	}
-		/* Browse All Products - Desktop_PC_Servers ICON before Menu item */	
-.sidenav.browseproducts #browse-all-categories #menu-item-2::before{
+}
+/* Browse All Products - Desktop_PC_Servers ICON before Menu item */	
+.sidenav.browseproducts #browse-all-categories #menu-item-2::before {
 	width: 31px;
-    height: 25px;
+	height: 25px;
 	background-image: url(../images/browse-all-categories/Desktop_PC_Servers.png);
-
-	}		
-	/* Browse All Products - Laptops_Tablets ICON before Menu item */	
-.sidenav.browseproducts #browse-all-categories #menu-item-3::before{
+}
+/* Browse All Products - Laptops_Tablets ICON before Menu item */	
+.sidenav.browseproducts #browse-all-categories #menu-item-3::before {
 	width: 27px;
-    height: 19px;
+	height: 19px;
 	background-image: url(../images/browse-all-categories/Laptops_Tablets.png);
-
-	}		
-	/* Browse All Products - TV-Home-Theatre ICON before Menu item */	
-.sidenav.browseproducts #browse-all-categories #menu-item-4::before{
+}
+/* Browse All Products - TV-Home-Theatre ICON before Menu item */	
+.sidenav.browseproducts #browse-all-categories #menu-item-4::before {
 	width: 33px;
-    height: 17px;
+	height: 17px;
 	background-image: url(../images/browse-all-categories/TV-Home-Theatre.png);
-
-	}	
-	/* Browse All Products - Phone_Electronics ICON before Menu item */		
-.sidenav.browseproducts #browse-all-categories #menu-item-5::before{
+}
+/* Browse All Products - Phone_Electronics ICON before Menu item */		
+.sidenav.browseproducts #browse-all-categories #menu-item-5::before {
 	width: 19px;
-    height: 33px;
+	height: 33px;
 	background-image: url(../images/browse-all-categories/Phone_Electronics.png);
-
-	}	
-		/* Browse All Products - Cameras ICON before Menu item */	
-.sidenav.browseproducts #browse-all-categories #menu-item-6::before{
+}
+/* Browse All Products - Cameras ICON before Menu item */	
+.sidenav.browseproducts #browse-all-categories #menu-item-6::before {
 	width: 30px;
-    height: 24px;
+	height: 24px;
 	background-image: url(../images/browse-all-categories/Cameras.png);
-
-	}	
-	/* Browse All Products - Software_Gaming ICON before Menu item */		
-.sidenav.browseproducts #browse-all-categories #menu-item-7::before{
+}
+/* Browse All Products - Software_Gaming ICON before Menu item */		
+.sidenav.browseproducts #browse-all-categories #menu-item-7::before {
 	width: 31px;
-    height: 22px;
+	height: 22px;
 	background-image: url(../images/browse-all-categories/Software_Gaming.png);
-
-	}	
-	/* Browse All Products - Surveillance ICON before Menu item */		
-.sidenav.browseproducts #browse-all-categories #menu-item-8::before{
+}
+/* Browse All Products - Surveillance ICON before Menu item */		
+.sidenav.browseproducts #browse-all-categories #menu-item-8::before {
 	width: 36px;
-    height: 26px;
+	height: 26px;
 	background-image: url(../images/browse-all-categories/Surveillance.png);
-
-	}		
-	/* Browse All Products - Cables ICON before Menu item */	
-.sidenav.browseproducts #browse-all-categories #menu-item-9::before{
+}
+/* Browse All Products - Cables ICON before Menu item */	
+.sidenav.browseproducts #browse-all-categories #menu-item-9::before {
 	width: 33px;
-    height: 18px;
+	height: 18px;
 	background-image: url(../images/browse-all-categories/Cables.png);
-
-	}		
-		/* Browse All Products - Business ICON before Menu item */
-.sidenav.browseproducts #browse-all-categories #menu-item-10::before{
+}
+/* Browse All Products - Business ICON before Menu item */
+.sidenav.browseproducts #browse-all-categories #menu-item-10::before {
 	width: 31px;
-    height: 28px;
+	height: 28px;
 	background-image: url(../images/browse-all-categories/Business.png);
-	}		
-
+}
 /*togle show & hide sub menu*/
 
-.sidenav.browseproducts .am-panel.deactivate-item
- {display: none !important;}
-.sidenav.browseproducts .am-panel.activate-item .am-collapse
- {display: block !important;}
-
-.sidenav.browseproducts .activate-item h4
-{font-size: 18px !important;}
-
-
-.sidenav.browseproducts .activate-item .am-panel-hd {
-    position: fixed !important;
-    width: 100vw !important;
-	width: 100%;
-    background: #013366;
-    height: 35px;
-    margin-top: -16px;
-    transition:  margin-top 0.3s;
+.sidenav.browseproducts .am-panel.deactivate-item {
+	display: none !important;
 }
-
+.sidenav.browseproducts .am-panel.activate-item .am-collapse {
+	display: block !important;
+}
+.sidenav.browseproducts .activate-item h4 {
+	font-size: 18px !important;
+}
+.sidenav.browseproducts .activate-item .am-panel-hd {
+	position: fixed !important;
+	width: 100vw !important;
+	width: 100%;
+	background: #013366;
+	height: 35px;
+	margin-top: -16px;
+	transition: margin-top 0.3s;
+}
 .sidenav.browseproducts .am-panel.activate-item::before {
-    position: fixed !important;
+	position: fixed !important;
 	margin-top: -5px;
 }
-
 .sidenav.browseproducts #browse-all-categories .am-panel.activate-item::after {
-    content: "-";
-    color: #FFF;
-    float: right;
-    right: 22px;
-    position: fixed;
-    font-size: 45px;
-    top: 130px;
-    z-index: 2;
+	content: "-";
+	color: #FFF;
+	float: right;
+	right: 22px;
+	position: fixed;
+	font-size: 45px;
+	top: 130px;
+	z-index: 2;
 }
 .sidenav.browseproducts .am-panel::after {
-    content: "+";
-    color: #FFF;
-    float: right;
-    right: 22px;
-    position: absolute;
-    margin-top: -35px;
-    font-size: 22px;
+	content: "+";
+	color: #FFF;
+	float: right;
+	right: 22px;
+	position: absolute;
+	margin-top: -35px;
+	font-size: 22px;
 }
 div#allCategories_header.enable::after {
-    content: "back";
-    float: right;
-    right: 18px;
-    position: fixed;
-    color: #FFF !important;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: 700;
+	content: "back";
+	float: right;
+	right: 18px;
+	position: fixed;
+	color: #FFF !important;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 .sidenav.browseproducts .am-panel.activate-item .am-panel-bd {
-    margin-top: 22px;
+	margin-top: 22px;
 }
-
 .sidenav.browseproducts .am-panel.activate-item li.sidebar {
-    color: #f00;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-bottom: 1px solid rgba(153, 153, 153, 0.45);
-    padding: 10px;
-    background: rgba(0, 84, 149, 0.35);
-    border-radius: 10px;
-    margin-bottom: 11px;}
-
+	color: #f00;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-bottom: 1px solid rgba(153, 153, 153, 0.45);
+	padding: 10px;
+	background: rgba(0, 84, 149, 0.35);
+	border-radius: 10px;
+	margin-bottom: 11px;
+}
 .sidenav.browseproducts .am-panel.activate-item li.sidebar > a {
-    color: #FFF;
-    text-transform: capitalize !important;
-    font-weight: normal !important;
+	color: #FFF;
+	text-transform: capitalize !important;
+	font-weight: normal !important;
 }
 /* ************** * HOME PAGE Section * ************** */
 
 /* Disable Home page when side menu is active, views/home.php */
 #body-content.disable {
-    opacity: 0.2;
+	opacity: 0.2;
 }
-
 /*REMOVE BULLETS FROM UL, views/home.php */
 
 #home ul.col4 {
-    list-style-type: none;
-    padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 /* Product Image, views/home.php */
 #home span.product-img {
-    display: block;
+	display: block;
 }
 /* Product Price, views/home.php */
 
 #home span.price-regular {
-    display: block;
-    color: #000000;
-    font-weight: bold !important;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+	display: block;
+	color: #000000;
+	font-weight: bold !important;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 1.7em !important;
-    line-height: 1em;
-    text-decoration: none !important;
+	line-height: 1em;
+	text-decoration: none !important;
 }
-
 /* Product Description, views/home.php */
 #home span.product-description {
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 160px;
-    white-space: normal;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 160px;
+	white-space: normal;
 }
-
-
 /**************** LEFT-SIDE-PUSH-MENU - elements Disabled when Store Locations is Activated  ****************/
-.left-side-menu-active .store-locations #main_navigation,
-.left-side-menu-active .store-locations #topmenu-GPS-icon,
-.left-side-menu-active .store-locations #sidemenu-open-myaccount
-{display: none !important;}
+.left-side-menu-active .store-locations #main_navigation, .left-side-menu-active .store-locations #topmenu-GPS-icon, .left-side-menu-active .store-locations #sidemenu-open-myaccount {
+	display: none !important;
+}
 /**************** LEFT-SIDE-PUSH-MENU - elements Disabled untill IT'S Activated  ****************/
-#left-side-push-menu .map-container,
-#left-side-push-menu #store-connections,
-#left-side-push-menu #storeLocations,
-#left-side-push-menu .store-location,
-#left-side-push-menu .deactivate-menuitem,
-#left-side-push-menu #locations-nav,
-#left-side-push-menu #Store-Details-Header,
-#left-side-push-menu .menuitem-active .menu_item::after,
-#left-side-push-menu .menuitem-active div#storelocations-Header
-{display: none;}
-
+#left-side-push-menu .map-container, #left-side-push-menu #store-connections, #left-side-push-menu #storeLocations, #left-side-push-menu .store-location, #left-side-push-menu .deactivate-menuitem, #left-side-push-menu #locations-nav, #left-side-push-menu #Store-Details-Header, #left-side-push-menu .menuitem-active .menu_item::after, #left-side-push-menu .menuitem-active div#storelocations-Header {
+	display: none;
+}
 /**************** LEFT-SIDE-PUSH-MENU - elements Enabled when IT'S Activated  ****************/
-.left-side-menu-active .store-locations #storeLocations,
-.left-side-menu-active .store-locations #locations-nav,
-.left-side-menu-active .store-locations #retunHome,
-.left-side-menu-active .store-locations #sidemenu-close-area,
-.left-side-menu-active .store-locations .activate-menuitem ul.store-location,
-.left-side-menu-active .store-locations .activate-menuitem #locations-nav,
-#left-side-push-menu .menuitem-active #Store-Details-Header,
-#left-side-push-menu .menuitem-active .activate-menuitem .map-container,
-#left-side-push-menu .menuitem-active .activate-menuitem #store-connections
-{display: block !important;}
-
+.left-side-menu-active .store-locations #storeLocations, .left-side-menu-active .store-locations #locations-nav, .left-side-menu-active .store-locations #retunHome, .left-side-menu-active .store-locations #sidemenu-close-area, .left-side-menu-active .store-locations .activate-menuitem ul.store-location, .left-side-menu-active .store-locations .activate-menuitem #locations-nav, #left-side-push-menu .menuitem-active #Store-Details-Header, #left-side-push-menu .menuitem-active .activate-menuitem .map-container, #left-side-push-menu .menuitem-active .activate-menuitem #store-connections {
+	display: block !important;
+}
 /**************** LEFT-SIDE-PUSH-MENU - Store Locations Area  ****************/
 
 /* Account Area - Activated - Open Account Body to 100%*/
 .left-side-menu-active .store-locations {
 	width: 100% !important;
- 	height: 100%;
+	height: 100%;
 	height: 100vh !important;
-	background-color: #f0f8ff;
+	background-color: #f0f8ff !important;
 	transition: 0.5s;
-  -webkit-transition: background-color 0.5s ease-out;
-  -moz-transition: background-color 0.5s ease-out;
-  -o-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
 }
-
 .left-side-menu-active .store-locations #menu-bar-center {
-    width: 66.66666667% !important;
+	width: 66.66666667% !important;
 }
-
-.left-side-menu-active .store-locations #side-menu-top{
-	    width: 100% !important;
-		transition: 0.5s;
-
-	}
-
+.left-side-menu-active .store-locations #side-menu-top {
+	width: 100% !important;
+	transition: 0.5s;
+}
 .left-side-menu-active .store-locations #side-menu-top-left {
-    text-align: center;
+	text-align: center;
 	background-color: #f0f8ff;
 }
 .left-side-menu-active .store-locations #side-menu-top-right {
-    width: 16.66666667% !important;
-		}
-
+	width: 16.66666667% !important;
+}
 .left-side-menu-active .store-locations #side-menu-right-icons {
-    float: left !important;
+	float: left !important;
 }
-/*top menu area*/
+/*store-locations top menu area*/
 .left-side-menu-active .store-locations #locations-header {
-    position: fixed;
-    width: 100%;
-    max-width: 100vw;
-    background: #f0f8ff;
-    z-index: 1;
+	position: fixed;
+	width: 100%;
+	max-width: 100vw;
+	background: #f0f8ff;
+	z-index: 1;
 }
-/*menu body*/
+/* store-locations *menu body*/
 .left-side-menu-active .store-locations #locations-body {
-    padding-bottom: 50px;
-	    margin-top: 25px;
+	padding-bottom: 50px;
+	margin-top: 25px;
+	background: #f0f8ff;
 }
 /*all stores navigation*/
 .left-side-menu-active .store-locations #show-all-stores {
-    margin-top: 35px;
+	margin-top: 35px;
 }
-
 /* All Stores Navigation - Menu Items*/
 
 .left-side-menu-active .store-locations #locations-nav ul {
-    list-style: none;
+	list-style: none;
 }
 .left-side-menu-active .store-locations ul#all-locations {
-    padding: 0;
-    margin-left: 25px;
+	padding: 0;
+	margin-left: 25px;
 }
 .left-side-menu-active .store-locations ul.store-location {
-    padding: 0;
+	padding: 0;
 }
 /*Store Location */
-.left-side-menu-active .store-locations ul.store-location a,
-.left-side-menu-active .store-locations ul.store-location {
-    color: #000;
+.left-side-menu-active .store-locations ul.store-location a, .left-side-menu-active .store-locations ul.store-location {
+	color: #000;
 }
-
-
 .left-side-menu-active .store-locations .locations-menu-item {
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 10px;
-    border-bottom: 1px solid rgba(153, 153, 153, 0.45);
-    padding-bottom: 10px;
-    width: 85.8%;
-    vertical-align: middle;
-    line-height: 30px;
-    color: #000;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 10px;
+	border-bottom: 1px solid rgba(153, 153, 153, 0.45);
+	padding-bottom: 10px;
+	width: 85.8%;
+	vertical-align: middle;
+	line-height: 30px;
+	color: #000;
 }
-.left-side-menu-active .store-locations #whitby.locations-menu-item,
-.left-side-menu-active .store-locations .activate-menuitem .locations-menu-item {
-    border: none;
+.left-side-menu-active .store-locations #whitby.locations-menu-item, .left-side-menu-active .store-locations .activate-menuitem .locations-menu-item {
+	border: none;
 }
 /*Store Header*/
 
 .left-side-menu-active .store-locations #storelocations-Header {
-    color: #000;
-    font-size: 25px;
-    width: 100%;
-    line-height: 20px;
-    display: inline-block;
-    padding-top: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-    padding-left: 40px;
-    border-bottom: 1px solid rgba(153, 153, 153, 0.45);
-    position: fixed;
-    background: #f0f8ff;
-    z-index: 2;
+	color: #000;
+	font-size: 25px;
+	width: 100%;
+	line-height: 20px;
+	display: inline-block;
+	padding-top: 16px;
+	padding-right: 16px;
+	padding-bottom: 16px;
+	padding-left: 40px;
+	border-bottom: 1px solid rgba(153, 153, 153, 0.45);
+	position: fixed;
+	background: #f0f8ff;
+	z-index: 2;
 }
 /* Store Details Header*/
 .left-side-menu-active .store-locations .menuitem-active #Store-Details-Header {
-    color: #000;
-    font-size: 25px;
-    width: 100%;
-    line-height: 20px;
-    display: inline-block;
-    padding-top: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-    padding-left: 40px;
-    border-bottom: 1px solid rgba(153, 153, 153, 0.45);
-    position: fixed;
-    background: #f0f8ff;
-    z-index: 2;
+	color: #000;
+	font-size: 25px;
+	width: 100%;
+	line-height: 20px;
+	display: inline-block;
+	padding-top: 16px;
+	padding-right: 16px;
+	padding-bottom: 16px;
+	padding-left: 40px;
+	border-bottom: 1px solid rgba(153, 153, 153, 0.45);
+	position: fixed;
+	background: #f0f8ff;
+	z-index: 2;
 }
 .left-side-menu-active .store-locations .menuitem-active #Store-Details-Header::after {
-    content: "back";
-    float: right;
-    right: 18px;
-    position: fixed;
-    color: #000 !important;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: 700;
+	content: "back";
+	float: right;
+	right: 18px;
+	position: fixed;
+	color: #000 !important;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 700;
 }
-
 .left-side-menu-active .store-locations .activate-menuitem {
-    margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 .left-side-menu-active .store-locations .menuitem-active #locations-body {
 	margin-top: 20px;
 }
-
 .left-side-menu-active .store-locations .menu_item::after {
-    content: "+";
-    color: #000;
-    float: right;
-    right: 22px;
-    position: absolute;
-    margin-top: -35px;
-    font-size: 22px;
-    display: block;
+	content: "+";
+	color: #000;
+	float: right;
+	right: 22px;
+	position: absolute;
+	margin-top: -35px;
+	font-size: 22px;
+	display: block;
 }
 .left-side-menu-active .store-locations .activate-menuitem::before {
-    content: "-";
-    color: #000;
-    float: right;
-    right: 22px;
-    font-size: 50px;
-    display: block;
-    position: absolute;
-    margin-top: -30px;
+	content: "-";
+	color: #000;
+	float: right;
+	right: 22px;
+	font-size: 50px;
+	display: block;
+	position: absolute;
+	margin-top: -30px;
 }
 /* Active Store Location*/
 .activate-menuitem ul.store-location {
-     width: 95%;
+	width: 95%;
 }
 /* Bottom Border */
 ul.store-location li {
-    border-bottom: 2px dotted rgba(153, 153, 153, 0.45);
-    line-height: 30px;
+	border-bottom: 2px dotted rgba(153, 153, 153, 0.45);
+	line-height: 30px;
 }
 /*store links */
-.left-side-menu-active .store-locations a.store-manager,
-.left-side-menu-active .store-locations a.store-email,
-.left-side-menu-active .store-locations a.email,
-.left-side-menu-active .store-locations li.store-phone a {
-    font-size: 14px;
+.left-side-menu-active .store-locations a.store-manager, .left-side-menu-active .store-locations a.store-email, .left-side-menu-active .store-locations a.email, .left-side-menu-active .store-locations li.store-phone a {
+	font-size: 14px;
 }
 /* Store Hours Tile*/
 .left-side-menu-active .store-locations li.store-hours.title {
-    font-weight: 600;
-    padding-bottom: 5px;
+	font-weight: 600;
+	padding-bottom: 5px;
 }
 /* Store Address */
 .left-side-menu-active .store-locations li.store-address {
-    line-height: 25px !important;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+	line-height: 25px !important;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
-
 /* Store Address - A Tag */
 .left-side-menu-active .store-locations li.store-address a {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
-
 .left-side-menu-active .store-locations li.store-hours {
-    text-transform: uppercase;
-	    font-size: 15px;
+	text-transform: uppercase;
+	font-size: 15px;
 }
-
-
-.left-side-menu-active .store-locations li.store-hours.saturdays,
-.left-side-menu-active .store-locations li.store-hours.weekdays,
-.left-side-menu-active .store-locations li.store-image {
-    border: none !important;
+.left-side-menu-active .store-locations li.store-hours.saturdays, .left-side-menu-active .store-locations li.store-hours.weekdays, .left-side-menu-active .store-locations li.store-image {
+	border: none !important;
 }
 .activate-menuitem li.store-image img {
-    height: auto;
-    max-width: 400px;
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 10px;
+	height: auto;
+	max-width: 400px;
+	width: 100%;
+	border-radius: 15px;
+	margin-bottom: 10px;
 }
-
-.left-side-menu-active .store-locations img.email-icon,
-.left-side-menu-active .store-locations img.phone-icon {
-    width: auto;
-    height: 30px;
-    padding-right: 15px;
+.left-side-menu-active .store-locations img.email-icon, .left-side-menu-active .store-locations img.phone-icon {
+	width: auto;
+	height: 30px;
+	padding-right: 15px;
 }
 .left-side-menu-active .store-locations li.store-hours.sundays {
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
-.left-side-menu-active .store-locations li.store-service-centre,
-.left-side-menu-active .store-locations li.store-phone{
-    line-height: 40px !important;
-    margin-bottom: 10px;
-		}
-
+.left-side-menu-active .store-locations li.store-service-centre, .left-side-menu-active .store-locations li.store-phone {
+	line-height: 40px !important;
+	margin-bottom: 10px;
+}
+/* Store MAP - Container*/
 .left-side-menu-active .store-locations .map-container {
-    margin-top: 15px;
+	margin-top: 15px;
+}
+/* Store MAP - Embed Tag & Map */
+.left-side-menu-active .store-locations .map-container embed, #map {
+	height: 300px;
+	width: 300px;
 }
 .left-side-menu-active .store-locations #map {
-    height: 300px;
-    width: 300px;
-    margin-bottom: -75px;
-}
-.left-side-menu-active #store-connections ul {
-    width: 100%;
-    margin-left: -15px !important;
-}
-.left-side-menu-active #store-connections li {
-    display: inline;
-    padding: 0px 5px;
+/*    margin-bottom: -75px;*/
 }
 .left-side-menu-active #store-connections {
-    position: fixed;
-    bottom: 0;
-    background: #005495;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    left: 0;
-    color: #FFF;
+	text-align: -webkit-center;
+}
+.left-side-menu-active #store-connections ul#bottom-menu {
+	width: 100%;
+	padding: 0;
+	max-width: 380px;
+}
+.left-side-menu-active #store-connections ul#bottom-menu li {
+	display: inline;
+	text-align: center;
+}
+.left-side-menu-active #store-connections {
+	position: fixed;
+	bottom: 0;
+	background: #005495;
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+	left: 0;
+	color: #FFF;
 }
 .left-side-menu-active #store-connections a {
-    font-size: 15px;
-}    
-
-
-.left-side-menu-active .menu_item.activate-menuitem .map-container,
-.left-side-menu-active .menu_item.activate-menuitem ul.store-location
-{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+	font-size: 15px;
+}
+.left-side-menu-active .menu_item.activate-menuitem .map-container, 
+.left-side-menu-active .menu_item.activate-menuitem ul.store-location {
+	position: relative;
+	animation: animatetop 0.4s
+}
+@keyframes animatetop {
+from {
+top:-300px;
+opacity:0
+}
+to {
+	top: 0;
+	opacity: 1
+}
+}
 /* ********************************************************** */
-/*Map Page*/
- #map {
-        height: 300px;
-        width: 300px;
-       }
+
+   
 /* ********************************************************** */

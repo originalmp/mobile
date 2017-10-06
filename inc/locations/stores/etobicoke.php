@@ -5,7 +5,7 @@
 
   <li class="store-address"><a href="https://maps.apple.com/?q=1800%20The%20Queensway,%20Etobicoke,%20ON%20M9C%205H5" target="_blank">1800 Queensway, Etobicoke, ON M9C 5H5</a></li>
    <li class="store-hours title">Store &amp; Service Centre Hours:</li>
-  <li class="store-hours weekdays">M – F : 10am – 8pm</li>
+  <li class="store-hours weekdays">Mon-Fri : 10am – 8pm</li>
   <li class="store-hours saturdays">Saturday : 10am – 7pm</li>
   <li class="store-hours sundays">Sunday : 11am – 6pm</li>
   
@@ -24,12 +24,12 @@
 
 
 
- <div class="map-container"><embed style="width: 320px;height: 340px;" src="./inc/locations/stores/etobicoke-map.html"></embed></div>
+ <div class="map-container"><embed src="./inc/locations/stores/etobicoke-map.html"></embed></div>
 <div id="store-connections">
-  <ul>
-    <li><a class="btn" href="tel:416-238-6806">Call</a></li>
-    <li><a class="btn" href="mailto:etobicoke@canadacomputers.com">Email</a></li>
-    <li><a class="btn" href="https://maps.apple.com/?q=1800%20The%20Queensway,%20Etobicoke,%20ON%20M9C%205H5">Directions</a></li>
+  <ul id="bottom-menu" class="row">
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="tel:416-238-6806">Call</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="mailto:etobicoke@canadacomputers.com">Email</a></li>
+    <li class="col-xs-4 col-sm-4 col-md-4"><a class="btn" href="https://maps.apple.com/?q=1800%20The%20Queensway,%20Etobicoke,%20ON%20M9C%205H5">Directions</a></li>
   </ul>
 </div>
 <!-- END /inc/locations/stores/etobicoke.php  -->
