@@ -8,6 +8,10 @@
 <link href="./css/media.css" rel="stylesheet" type="text/css">
 <link href="./css/bootstrap.min.css" rel="stylesheet">
 <link href="./css/animations.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/slick.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+
+
 <script src="./js/jquery.min.js"></script>
 <script src="//rawgit.com/balupton/jquery-scrollto/gh-pages/lib/jquery-scrollto.js"></script>
 </head>
@@ -40,5 +44,6 @@
 
 <script src="./js/bootstrap.min.js"  type="text/javascript"></script> 
 <script src="./js/main.js" type="text/javascript"></script>
+ <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

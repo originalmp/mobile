@@ -1,27 +1,21 @@
 <style>
 #specials-container {
-    margin-right: 5px;
-    margin-left: 5px;
-	}
+    margin: 0 5px;
+}
 
 .special-deals {
-    background: aliceblue;
-    margin: 0px 2px;
+    background: aqua;
+    padding: 0 10px;
     text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-    height: 100px;
-    width: 48% !important;
-    border-radius: 6px;	-webkit-box-shadow: 10px 13px 35px -17px rgba(0,0,0,0.58);
-	-moz-box-shadow: 10px 13px 35px -17px rgba(0,0,0,0.58);
-	box-shadow: 10px 13px 35px -17px rgba(0,0,0,0.58);
+    height: 85px;
+    margin: 0px 5px;
+    width: 47% !important;
+    border: 2px solid #005495;
+    border-radius: 6px;
 }
 </style>
 
 <!-- start of /views/home.php -->
-
-
-<div id="home">
 
 <!-- Start of ./inc/hero-slider.php -->
 <div id="hero-slider">
@@ -33,21 +27,22 @@
 <div id ="specials-container" class="row">
 <div id="weekly-specials" class="special-deals col-md-6 col-xs-6 col-sm-6">
 
-<span class="highlight">WEEKLY DEALS</span>
+<span>Shop</span> <span class="highlight">WEEKLY DEALS</span>
 </div>
 <div id="daily-specials" class="special-deals col-md-6 col-xs-6 col-sm-6">
-<span class="highlight">DAILY DEALS</span>
+<span>Shop</span> <span class="highlight">DAILY DEALS</span>
 </div>
 
 </div>
 <!-- End of Specials -->
-<div id="products-slider">
-  <h2>Featured Products</h2>
-   <?php include './inc/products-slider.php'; ?>
-</div>
+
+<div id="home">
+
+  <h2>Mobile Site</h2>
+  <p>Click on the menu to open the side navigation menu, and push this content to the right. Notice that i add a black see-through background-color to body when the sidenav is opened.</p>
 
 
-<div id="sample-products" class="">
+<div class="">
 
 <div class="listing"><ul class="col4 ">
       <li class="col-md-3 col-xs-6 col-sm-6">

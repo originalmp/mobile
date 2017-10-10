@@ -136,7 +136,7 @@ div#line {
 /*************** *Product Search* **************/
 /* Search Area - Header - index.php */
 #ProductSearch {
-	transform: translateY(-160%);
+	transform: translateY(-185%);
 	transition: all 0.3s ease-in;
 	height: 75px;
 	position: absolute;
@@ -147,6 +147,7 @@ div#line {
 	width: 100vw !important;
 	width: 100%;
 	padding: 15px;
+	    z-index: 2;
 }
 /* Search outer DIV - Active, index.php */
 #ProductSearch.active {
